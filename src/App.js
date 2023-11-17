@@ -3,7 +3,8 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import SearchBar from './components/Searchbar'
 import Header from './components/Header'
-import AdvancedFilter from './components/Filter'
+import Home from './pages/home'
+
 
 const App = () => {
   return (
@@ -11,8 +12,8 @@ const App = () => {
       <Header/>
       <Navbar/>
       <SearchBar/>
-      <AdvancedFilter/>
       <Footer/>
+      <Home/>
     </div>
   )
 }
