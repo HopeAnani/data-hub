@@ -3,7 +3,7 @@ import '../styles/svg.css';
 
 const Home = () => {
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="flex flex-wrap justify-center items-center">
       {/* Card 1 */}
       <div className="w-full md:w-[350px] mx-2 my-4 bg-white rounded-md overflow-hidden shadow-md">
         <img
@@ -41,6 +41,23 @@ const Home = () => {
       </div>
 
       {/* Card 3 */}
+      <div className="w-full md:w-[350px] mx-2 my-4 bg-white rounded-md overflow-hidden shadow-md">
+        <img
+          className="w-full h-48 object-cover object-center"
+          src="https://images.unsplash.com/photo-1572276037952-478cead56982?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          alt='Economy'
+        />
+        <div className="p-6">
+          <h2 className="text-xl font-semibold mb-2">Capital Market</h2>
+          <p className="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut consequuntur expedita adipisci blanditiis nemo quos sed deleniti illum saepe rem voluptatem earum repellendus aliquid aperiam dolorum tenetur, fugiat veniam?</p>
+          <button
+            className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
+          >
+            Click me
+          </button>
+        </div>
+      </div>
+      {/* Card 4 */}
       <div className="w-full md:w-[350px] mx-2 my-4 bg-white rounded-md overflow-hidden shadow-md">
         <img
           className="w-full h-48 object-cover object-center"
