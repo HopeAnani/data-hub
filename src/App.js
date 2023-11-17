@@ -1,19 +1,17 @@
 import React from 'react'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import SearchBar from './components/Searchbar'
-import Header from './components/Header'
 import Home from './pages/home'
+import SearchBar from './components/Searchbar'
 
 
 const App = () => {
   return (
-    <div>
-      <Header/>
+    <div className='block'>
       <Navbar/>
       <SearchBar/>
-      <Footer/>
       <Home/>
+      <Footer/>
     </div>
   )
 }

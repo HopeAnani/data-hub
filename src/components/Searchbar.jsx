@@ -124,7 +124,7 @@ const SearchBar = () => {
 
   return (
     <>
-      <div className="flex items-center space-x-2 p-4 search">
+      <div className="flex items-center space-x-2 p-4 search bg-[#f2f5f7]">
         <input
           type="text"
           placeholder="Search..."
@@ -134,7 +134,7 @@ const SearchBar = () => {
         />
         <button
           className={`bg-[#173e26] text-white p-2 rounded hover:bg-[#153722] w-24 btn ${
-            isSearchButtonDisabled ? 'opacity-50 cursor-not-allowed' : ''
+            isSearchButtonDisabled ? 'cursor-not-allowed' : ''
           }`}
           onClick={() => {
             applyFilters('All', 'All', 'All', 'All');
