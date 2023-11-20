@@ -7,12 +7,13 @@ import SearchBar from './components/Searchbar'
 
 const App = () => {
   return (
-    <div className='block'>
-      <Navbar/>
-      <SearchBar/>
-      <Home/>
-      <Footer/>
-    </div>
+      <div className='block'>
+        <Navbar/>
+        <SearchBar/>
+        <Home/>
+        <Footer/>
+      </div>
+    // document.getElementById('root')
   )
 }
 

@@ -12,7 +12,7 @@ const Home = () => {
           alt='Investment'
         />
         <div className="p-6">
-          <h2 className="text-xl font-semibold mb-2">INvestment in Afar region</h2>
+          <h2 className="text-xl font-semibold mb-2">Investment in Afar region</h2>
           <p className="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam illum unde tempore voluptas? Neque eius accusamus, atque laboriosam quidem, numquam veniam deserunt, modi iure optio obcaecati nihil minima at quae?</p>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
