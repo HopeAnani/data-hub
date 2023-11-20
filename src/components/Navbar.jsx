@@ -11,7 +11,7 @@ const Navbar = () => {
     };
 
   return (
-    <div className=' bg-[#173e26] sticky top-0'>
+    <div className=' bg-[#173e26] sticky top-0 z-40'>
         <Header/>
     <div className='flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white'>
         <h1 className='w-[30%] text-3xl font-bold'>ACE IDH</h1>

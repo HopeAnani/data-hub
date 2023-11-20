@@ -1,4 +1,3 @@
-// SearchBar.js
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
@@ -10,11 +9,12 @@ import {
   setStartYearFilter,
   setEndYearFilter,
 } from '../redux-file/actions';
+import '../styles/search.css'
 
 const generateYearOptions = () => {
   const currentYear = new Date().getFullYear();
   const years = [];
-  for (let year = 1900; year <= currentYear; year++) {
+  for (let year = currentYear; year >= 1900; year-- ) {
     years.push(year.toString());
   }
   return years;
@@ -35,7 +35,6 @@ const SearchBar = () => {
         filters.dataTypeFilter,
         filters.startYearFilter,
         filters.endYearFilter,
-        console.log()
       )
     );
   };
@@ -149,7 +148,7 @@ const SearchBar = () => {
       )}
         {/* Display Search Results */}
       {searchTerm.trim() !== '' && (
-        <div className="mt-8">
+        <div className="mt-8 justify-center items-center text-center">
           <h3 className="text-lg font-semibold mb-2">Search Results:</h3>
           <ul>
             {searchResults.map((item) => (
@@ -159,7 +158,7 @@ const SearchBar = () => {
         </div>
       )}
        {/* Display Filtered Items */}
-       <div className="mt-8">
+       <div className="mt-8 flex justify-center text-center">
         <ul>
           {filteredItems.map((item) => (
             <li key={item.id}>{`${item.name} - ${item.region} - ${item.dataType} - ${item.year}`}</li>
