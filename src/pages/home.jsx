@@ -1,11 +1,12 @@
 import React from 'react';
 import ImageAccordion from '../components/ImageAccordion';
 import CardList from '../components/cardList';
+import LandingPage from '../components/landingpage';
 
 const Home = () => {
   return (
     <>
-  
+    <LandingPage/>
     <div className="flex flex-wrap justify-center items-center">
       {/* Card 1 */}
       <div className="w-full md:w-[350px] mx-2 my-4 bg-white rounded-md overflow-hidden shadow-md">

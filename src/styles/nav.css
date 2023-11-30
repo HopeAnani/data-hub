@@ -32,3 +32,12 @@
 .list a:hover::after {
     width: 100%;
 }
+
+@media (max-width:550px) {
+    .AIDH {
+        display: none;
+    }
+    .IDH {
+        display: block;
+    }
+}

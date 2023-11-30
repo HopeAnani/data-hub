@@ -35,7 +35,7 @@ const LandingPage = () => {
           className={`slide absolute w-full h-48 object-cover object-center ${index === currentSlide ? 'active' : ''}`}
         >
           <img className="z-10 w-full" src={slide.imageUrl} alt="" />
-          <div className="info absolute top-0 pt-4 pr-8 pb-4 pl-8 text-white">
+          <div className="info absolute top-0 pt-4 pr-8 pb-4 pl-8 object-center justify-center text-justify text-center text-white">
             <h2 className="text-[45px] uppercase font-extrabold tracking-wider">{slide.title}</h2>
             <p>{slide.description}</p>
             <button  className="bg-[#173e26] text-white p-2 rounded w-36 hover:bg-[#112e1c]">Know more</button>
