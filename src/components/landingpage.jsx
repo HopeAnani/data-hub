@@ -1,5 +1,4 @@
-// LandingPage.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/landingpage.css';
 
 const LandingPage = () => {
@@ -27,6 +26,16 @@ const LandingPage = () => {
     setCurrentSlide(index);
   };
 
+  useEffect(() => {
+    // Auto slide every 3.5 seconds (adjust the interval as needed)
+    const intervalId = setInterval(() => {
+      setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    }, 3500);
+
+    // Clear the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, [slides.length]);
+
   return (
     <div className="img-slide w-full relative h-[500px] overflow-hidden bg-scroll">
       {slides.map((slide, index) => (
@@ -35,10 +44,10 @@ const LandingPage = () => {
           className={`slide absolute w-full h-48 object-cover object-center ${index === currentSlide ? 'active' : ''}`}
         >
           <img className="z-10 w-full" src={slide.imageUrl} alt="" />
-          <div className="info absolute top-0 pt-4 pr-8 pb-4 pl-8 object-center justify-center text-justify text-center text-white">
+          <div className="info absolute top-0 pt-4 pr-8 pb-4 pl-8 object-center justify-center text-justify text-white">
             <h2 className="text-[45px] uppercase font-extrabold tracking-wider">{slide.title}</h2>
             <p>{slide.description}</p>
-            <button  className="bg-[#173e26] text-white p-2 rounded w-36 hover:bg-[#112e1c]">Know more</button>
+            <button className="bg-[#173e26] text-white p-2 rounded w-36 hover:bg-[#112e1c]">Know more</button>
           </div>
         </div>
       ))}
