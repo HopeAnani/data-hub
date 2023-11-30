@@ -3,19 +3,17 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/home'
 import SearchBar from './components/Searchbar'
-import Component from './pages/table'
-
+import LandingPage from './components/landingpage'
 
 const App = () => {
   return (
       <div className='block'>
         <Navbar/>
+        <LandingPage/>
         <SearchBar/>
         <Home/>
-        {/* <Component/> */}
         <Footer/>
       </div>
-    // document.getElementById('root')
   )
 }
 
