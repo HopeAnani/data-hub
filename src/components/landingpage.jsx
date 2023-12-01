@@ -4,12 +4,12 @@ import '../styles/landingpage.css';
 const LandingPage = () => {
   const slides = [
     {
-      imageUrl: 'https://images.unsplash.com/photo-1682685797365-41f45b562c0a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      imageUrl: 'https://images.unsplash.com/photo-1462899006636-339e08d1844e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGludmVzdG1lbnR8ZW58MHx8MHx8fDA%3D',
       title: 'Investment',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis amet dolor hic quis ipsa molestiae ipsum blanditiis deserunt nihil voluptas, architecto dolore rerum vel consequuntur nobis, vitae, repudiandae veniam.',
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1682686580036-b5e25932ce9a?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzN3x8fGVufDB8fHx8fA%3D%3D',
+      imageUrl: 'https://images.unsplash.com/photo-1633158829585-23ba8f7c8caf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Finance',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt corporis amet dolor hic quis ipsa molestiae ipsum blanditiis deserunt nihil voluptas, architecto dolore rerum vel consequuntur nobis, vitae, repudiandae veniam.',
     },

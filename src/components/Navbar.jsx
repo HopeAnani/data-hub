@@ -19,7 +19,7 @@ const Navbar = () => {
         <h1 className=' text-2xl font-semibold flex align-middle'><img src={ace_logo} className=' w-20'  alt="" />   <span className='AIDH'><span className='text-[45px]'> | </span>ACE Investment Data Hub</span><span className='IDH hidden'><span className='text-[45px]'> | </span>IDH</span></h1>
         <ul className='hidden  md:flex'>
             <li className='p-4 list'><a href="/">Home</a></li>
-            <li className='p-4 list'><a href="/">Explore</a></li>
+            <li className='p-4 list'><a href="../pages/explore.jsx">Explore</a></li>
             <li className='p-4 list'><a href="/">About us</a></li>
             <li className='p-4 list'><a href="/"><AiFillMail size={25}/></a></li>
             <li className='p-4 list'><a href="/"><AiFillPhone size={25}/></a></li>
