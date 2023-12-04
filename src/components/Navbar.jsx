@@ -17,6 +17,10 @@ const Navbar = () => {
     setNav(!nav);
   };
 
+  const closeNav = () => {
+    setNav(false);
+  };
+
   return (
     <div className=" bg-[#173e26] sticky top-0 z-50">
       <Header />
@@ -67,7 +71,7 @@ const Navbar = () => {
           }
         >
           {/* <h1 className='w-[30%] text-3xl font-bold m-4'>ACE IDH</h1> */}
-          <ul className=" p-4">
+          <ul className={!nav ? "hidden md:flex" : "p-4"} onClick={closeNav}>
             <li className="p-4 border-b border-gray-600">
               {/* <a href="/">Home</a> */}
               <Link to="/">Home</Link>

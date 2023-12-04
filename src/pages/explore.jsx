@@ -1,11 +1,10 @@
 import React from 'react'
-import ImageAccordion from '../components/ImageAccordion'
+import Sidebar from '../components/sidebar'
 
 const Explore = () => {
   return (
     <div>
-      <p>EXPLORE</p>
-      <ImageAccordion/>
+      <Sidebar/>
     </div>
   )
 }

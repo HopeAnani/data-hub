@@ -1,0 +1,80 @@
+.sidebar {
+  position: inherit;
+  width: 270px;
+  right: 0;
+  height: 100vh;
+  background: white;
+}
+
+.sidebar .sideText {
+  color: #173e26;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  letter-spacing: 1px;
+}
+
+.sidebar ul {
+  background: white;
+  height: 100%;
+  width: 100%;
+  list-style: none;
+}
+
+.sidebar ul li {
+  line-height: 60px;
+  border-bottom: 1px solid rgba(23, 63, 39, 0.1);
+}
+
+.sidebar ul li a {
+  position: relative;
+  color: #173e26;
+  text-decoration: none;
+  font-size: 18px;
+  padding-left: 40px;
+  font-weight: 500px;
+  display: block;
+  width: 100%;
+  border-left: 3px solid transparent;
+}
+
+.sidebar ul li a:hover {
+  color: white;
+  background: #173e26;
+  border-left-color: #17743a;
+}
+
+.sidebar ul ul {
+  position: static;
+  display: none;
+}
+
+.sidebar ul ul li {
+  line-height: 42px;
+  border-bottom: none;
+}
+
+.sidebar ul ul li a {
+  font-size: 17px;
+  color: #173e26;
+  padding-left: 80px;
+}
+
+.sidebar ul li a .caret {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: transform 0.4s;
+}
+
+.sidebar ul li a:hover .caret {
+  transform: translateY(-50%) rotate(-180deg);
+}
+
+.sidebar ul li:hover > ul {
+  display: block;
+}
