@@ -1,8 +1,12 @@
 import React from 'react'
+import ImageAccordion from '../components/ImageAccordion'
 
 const Explore = () => {
   return (
-    <div>E</div>
+    <div>
+      <p>EXPLORE</p>
+      <ImageAccordion/>
+    </div>
   )
 }
 

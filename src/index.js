@@ -1,18 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import { Provider } from 'react-redux';
-import store from './redux-file/store';
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
+import store from "./redux-file/store";
+import { BrowserRouter } from "react-router-dom";
+import "./index.css";
+import App from "./App";
 
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Provider store={store}>
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
-  </Provider>,
-  // document.getElementById('root')
+  </Provider>
 );
-
