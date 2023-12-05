@@ -1,11 +1,21 @@
 import React from 'react'
 import Sidebar from '../components/sidebar'
+import Sidecarddata from '../components/sidecarddata'
+import SearchBar from '../components/Searchbar'
 
 const Explore = () => {
   return (
-    <div>
-      <Sidebar/>
+    <>
+    <div className='w-[100%] clear-both h-max'>
+      
+      <div className='w-[80%] float-left'>
+        <SearchBar/>
+        <Sidecarddata/>
+      </div>
+      <div className='w-[20%] min-h-screen float-right'><Sidebar/></div>
+      
     </div>
+    </>
   )
 }
 

@@ -1,19 +1,12 @@
 // Sidebar.jsx
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/sidebar.css'
-import { AiFillCaretDown, AiFillCaretUp } from 'react-icons/ai';
+import { AiFillCaretDown } from 'react-icons/ai';
 
 const Sidebar = () => {
-    // State to track the visibility of submenus
-  const [subMenuOpen, setSubMenuOpen] = useState(false);
-
-  // Function to toggle the visibility of submenus
-  const toggleSubMenu = () => {
-    setSubMenuOpen(!subMenuOpen);
-  };
+  
   return (
-    <nav className='sidebar'>
+      <nav className='sidebar' id='sb'>
         <div className='sideText'>Side Menu</div>
         <ul className='list-none'>
             <li>

@@ -49,7 +49,7 @@ const SearchBar = () => {
 
   return (
     <>
-      <div className="flex items-center space-x-2 p-4 search justify-center">
+      <div className="flex flex-wrap items-center space-x-2 p-4 search justify-center">
         <input
           type="text"
           placeholder="Search..."
@@ -57,6 +57,7 @@ const SearchBar = () => {
           value={searchTerm}
           onChange={handleSearchTermChange}
         />
+        <div className='space-x-2 p-2'>
         <button
           className={`bg-[#173e26] text-white p-2 rounded hover:bg-[#153722] w-24 btn ${
             searchTerm.trim() === '' ? 'cursor-not-allowed' : ''
@@ -72,6 +73,7 @@ const SearchBar = () => {
         >
           {isFilterVisible ? 'Cancel' : 'Filter'}
         </button>
+        </div>
       </div>
 
       {isFilterVisible && (

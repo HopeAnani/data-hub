@@ -1,8 +1,8 @@
 .sidebar {
-  position: inherit;
+  position: fixed;
   width: 270px;
   right: 0;
-  height: 100vh;
+  height: 100%;
   background: white;
 }
 
@@ -33,7 +33,7 @@
   color: #173e26;
   text-decoration: none;
   font-size: 18px;
-  padding-left: 40px;
+  padding-left: 20px;
   font-weight: 500px;
   display: block;
   width: 100%;
@@ -43,7 +43,7 @@
 .sidebar ul li a:hover {
   color: white;
   background: #173e26;
-  border-left-color: #17743a;
+  border-right-color: red;
 }
 
 .sidebar ul ul {
@@ -59,7 +59,7 @@
 .sidebar ul ul li a {
   font-size: 17px;
   color: #173e26;
-  padding-left: 80px;
+  /* padding-left: 80px; */
 }
 
 .sidebar ul li a .caret {
