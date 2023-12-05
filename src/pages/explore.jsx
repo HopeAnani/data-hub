@@ -12,7 +12,7 @@ const Explore = () => {
         <SearchBar/>
         <Sidecarddata/>
       </div>
-      <div className='w-[20%] min-h-screen float-right'><Sidebar/></div>
+      <div className='w-[20%] float-right'><Sidebar/></div>
       
     </div>
     </>
