@@ -117,16 +117,17 @@
 }
 
 ::-webkit-scrollbar{
-  width: 12px;
+  width: 6px;
 }
 
 
 ::-webkit-scrollbar-track{
   background: rgba(23, 64, 39, 0.2);
-  border-radius: 2px;
+  border-radius: 100px;
 }
 
 ::-webkit-scrollbar-thumb{
   background: rgba(23, 64, 39, 0.4);
+  border-radius: 100px;
   /* border: 2px solid #173e26; */
 }

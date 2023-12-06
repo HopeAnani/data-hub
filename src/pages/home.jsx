@@ -23,7 +23,7 @@ const Home = () => {
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
-            Click me
+            Read More
           </button>
         </div>
       </div>
@@ -41,7 +41,7 @@ const Home = () => {
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
-            Click me
+            Read More
           </button>
         </div>
       </div>
@@ -59,7 +59,7 @@ const Home = () => {
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
-            Click me
+            Read More
           </button>
         </div>
       </div>
@@ -76,7 +76,7 @@ const Home = () => {
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
-            Click me
+            Read More
           </button>
         </div>
       </div>
