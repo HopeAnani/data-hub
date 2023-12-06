@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/landingpage.css';
+import SearchBar from './Searchbar';
 
 const LandingPage = () => {
   const slides = [
@@ -40,14 +41,15 @@ const LandingPage = () => {
     <div className="img-slide w-full relative h-[500px] overflow-hidden bg-scroll">
       {slides.map((slide, index) => (
         <div
-          key={index}
-          className={`slide absolute w-full h-48 object-cover object-center ${index === currentSlide ? 'active' : ''}`}
+        key={index}
+        className={`slide absolute w-full h-48 object-cover object-center ${index === currentSlide ? 'active' : ''}`}
         >
-          <img className="z-10 w-full" src={slide.imageUrl} alt="" />
-          <div className="info absolute top-0 pt-4 pr-8 pb-4 pl-8 object-center justify-center text-justify text-white">
-            <h2 className="text-[45px] uppercase font-extrabold tracking-wider">{slide.title}</h2>
-            <p>{slide.description}</p>
-            <button className="bg-[#173e26] text-white p-2 rounded w-36 hover:bg-[#112e1c]">Know more</button>
+          <img className="z-10 w-full bg-cover" src={slide.imageUrl} alt="" />
+          <div className="info absolute top-0 pt-4 pr-8 pb-4 pl-8 object-center justify-center text-justify">
+            <SearchBar/>
+            <h2 className="text-[45px] uppercase font-extrabold tracking-wider  text-white">{slide.title}</h2>
+            <p className=' text-white'>{slide.description}</p>
+            <button className="bg-[#173e26] text-white p-2 rounded w-36 hover:bg-[#112e1c] btnn">Know more</button>
           </div>
         </div>
       ))}

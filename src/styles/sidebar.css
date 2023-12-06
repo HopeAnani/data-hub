@@ -123,6 +123,7 @@
 
 ::-webkit-scrollbar-track{
   background: rgba(23, 64, 39, 0.2);
+  /* background: #173e26; */
   border-radius: 100px;
 }
 

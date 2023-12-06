@@ -53,7 +53,7 @@ const SearchBar = () => {
         <input
           type="text"
           placeholder="Search..."
-          className="border p-2 rounded w-[60%] inputSearch"
+          className="border p-2 rounded w-full inputSearch lg:w-[60%]"
           value={searchTerm}
           onChange={handleSearchTermChange}
         />
