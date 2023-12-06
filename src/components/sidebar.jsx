@@ -32,6 +32,9 @@ const Sidebar = () => {
             <li>
               <Link to="">Strategy Repository</Link>
             </li>
+            <li>
+              <Link to="">Important Links</Link>
+            </li>
           </ul>
         </li>
         <li>
