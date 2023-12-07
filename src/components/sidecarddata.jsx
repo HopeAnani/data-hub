@@ -35,7 +35,7 @@ const Sidecarddata = () => {
 
     ]
     return (
-        <div className="flex flex-wrap w-[100%] ml-10 gap-x-8 gap-y-4 p-4">
+        <div className="flex  flex-wrap w-[100%] ml-10 gap-x-8 gap-y-4 p-4">
           {cardData.map((card, index) => (
             <SideCard key={index} title={card.title} content={card.content}  buttonText={card.buttonText} imageUrl={card.imageUrl}/>
           ))}

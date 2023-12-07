@@ -2,6 +2,7 @@ import React from 'react'
 import Sidebar from '../components/sidebar'
 import Sidecarddata from '../components/sidecarddata'
 import SearchBar from '../components/Searchbar'
+import FlipBook from '../components/FlipBook'
 
 const Explore = () => {
   return (
@@ -11,6 +12,7 @@ const Explore = () => {
       <div className='w-[80%] float-left'>
         <SearchBar/>
         <Sidecarddata/>
+        <FlipBook/>
       </div>
       <div className='w-[20%] float-right'><Sidebar/></div>
       

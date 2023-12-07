@@ -5,6 +5,9 @@ import Home from './pages/home'
 import About from "./pages/about";
 import Explore from "./pages/explore";
 import { Routes, Route, useLocation} from "react-router-dom";
+import PDFViewer from './pages/pdfviewer';
+
+
 
 const App = () => {
   const { pathname } = useLocation();
@@ -13,7 +16,6 @@ const App = () => {
     window.scrollTo({top:0, behavior: "auto"});
   },[pathname]);
 
-
   return (
       <div className='block'>
         <Navbar/>
@@ -21,6 +23,7 @@ const App = () => {
             <Route path="/" exact element={<Home />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="/about" element={<About />} />
+            <Route path='/pdfviewer' element={<PDFViewer/>}/>
           </Routes>
         <Footer/>
       </div>

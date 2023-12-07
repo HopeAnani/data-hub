@@ -46,7 +46,7 @@ const Navbar = () => {
           </li>
           <li className="p-4 list">
             {/* <a href="/">About us</a> */}
-            <Link to="/about">About us</Link>
+            <Link to="/pdfviewer">About us</Link>
           </li>
           <li className="p-4 list">
             <a href="mailto:ananisamuelhope@gmail.com">
@@ -82,7 +82,7 @@ const Navbar = () => {
             </li>
             <li className="p-4 border-b border-gray-600">
               {/* <a href="/">About us</a> */}
-              <Link to="/about">About us</Link>
+              <Link to="/">About us</Link>
             </li>
             <li className="p-4 border-b border-gray-600 flex">
               <a href="mailto:ananisamuelhope@gmail.com" className="flex">
