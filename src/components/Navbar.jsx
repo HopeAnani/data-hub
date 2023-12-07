@@ -46,7 +46,7 @@ const Navbar = () => {
           </li>
           <li className="p-4 list">
             {/* <a href="/">About us</a> */}
-            <Link to="/pdfviewer">About us</Link>
+            <Link to="/">About us</Link>
           </li>
           <li className="p-4 list">
             <a href="mailto:ananisamuelhope@gmail.com">

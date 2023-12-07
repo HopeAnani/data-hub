@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/landingpage.css';
 import SearchBar from './Searchbar';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   const slides = [
@@ -49,7 +50,7 @@ const LandingPage = () => {
             <SearchBar/>
             <h2 className="text-[45px] uppercase font-extrabold tracking-wider  text-white">{slide.title}</h2>
             <p className=' text-white'>{slide.description}</p>
-            <button className="bg-[#173e26] text-white p-2 rounded w-36 hover:bg-[#112e1c] btnn">Know more</button>
+            <Link to='/searchresult'><button className="bg-[#173e26] text-white p-2 rounded w-36 hover:bg-[#112e1c] btnn">Know more</button></Link>
           </div>
         </div>
       ))}

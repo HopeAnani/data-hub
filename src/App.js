@@ -5,7 +5,7 @@ import Home from './pages/home'
 import About from "./pages/about";
 import Explore from "./pages/explore";
 import { Routes, Route, useLocation} from "react-router-dom";
-import PDFViewer from './pages/pdfviewer';
+import Result from './pages/searchresult';
 
 
 
@@ -23,7 +23,7 @@ const App = () => {
             <Route path="/" exact element={<Home />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="/about" element={<About />} />
-            <Route path='/pdfviewer' element={<PDFViewer/>}/>
+            <Route path='/searchresult' element={<Result/>}/>
           </Routes>
         <Footer/>
       </div>
