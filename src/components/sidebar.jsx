@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../styles/sidebar.css';
-import { AiFillCaretDown } from 'react-icons/ai';
+import { AiFillCaretDown, AiFillCaretLeft, AiFillCaretRight, AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai';
 
 const Sidebar = () => {
   const handleLinkClick = (event) => {
@@ -18,8 +18,23 @@ const Sidebar = () => {
   };
 
   return (
+    <div className='flex'>
+       {/* <div>
+        <AiFillCaretLeft/>
+      </div> */}
+      <input type="checkbox" id="sidecheck"></input>
+      <label for="sidecheck">
+			  <span class="spann" id="bars" onclick="contentMove('r')"><AiOutlineMenuFold size={25}/></span>
+		  </label>
+
+    {/* <input type="checkbox" id="drawer-toggle" class="relative sr-only peer" checked/>
+    <label for="drawer-toggle" class="absolute left-0 inline-block p-4 transition-all duration-500 bg-indigo-500 rounded-lg peer-checked:rotate-180 peer-checked:left-64">
+        <div class="w-6 h-1 mb-3 -rotate-45 bg-white rounded-lg"></div>
+        <div class="w-6 h-1 rotate-45 bg-white rounded-lg"></div>
+    </label> */}
+
     <nav className="sidebar overflow-y-scroll" id="sb">
-      <div className="sideText">Side Menu</div>
+      <div className="sideText">Side Menu</div> 
       <ul className="list-none">
         <li>
           <Link to="" onClick={handleLinkClick}>
@@ -84,6 +99,7 @@ const Sidebar = () => {
       <div className=' h-20'></div>
       </ul>
     </nav>
+    </div>
   );
 };
 

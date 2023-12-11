@@ -4,8 +4,41 @@
   right: 0;
   height: 100%;
   background: white;
+  transition: 0.5s ease;
+	transform: translatex(0%);
 }
 
+
+#sidecheck input {
+	-webkit-appearance: none;
+	visibility: hidden;
+	display: none;
+}
+
+#sidecheck {
+	display: none;
+}
+
+#sidecheck:checked~.sidebar {
+	transform: translateX(100%);
+}
+
+#sidecheck:checked~.sidebar #bars {
+	display: none;
+}
+
+.spann {
+	position: absolute;
+  margin-top: 10px;
+	/* right: 120px; */
+	/* top: 5px; */
+	/* font-size: 25px; */
+	/* border-radius: 3px; */
+	/* color: #fff; */
+	/* padding: 3px 8px; */
+	cursor: pointer;
+	/* background: #000; */
+}
 .sidebar .sideText {
   color: #173e26;
   font-size: 25px;

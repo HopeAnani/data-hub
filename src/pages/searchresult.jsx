@@ -64,6 +64,7 @@ const Result= () => {
                               </div>
                           </div>
                       </div>
+                      {/* <h1 class="text-xl font-bold text-[#173e26] md:text-2xl mt-6">Topics Related:</h1> */}
                       <div class="mt-6">
                           <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
                               <div class="flex items-center justify-between"><span class="font-light text-gray-600">Jun 1,
@@ -251,7 +252,7 @@ const Result= () => {
                           </div>
                       </div>
                       <div class="px-8 mt-10">
-                          <h1 class="mb-4 text-xl font-bold text-[#173e26]">Recents</h1>
+                          <h1 class="mb-4 text-xl font-bold text-[#173e26]">Related</h1>
                           <div class="flex flex-col max-w-sm px-8 py-6 mx-auto bg-white rounded-lg shadow-md">
                               <div class="flex items-center justify-center"><Link to="/"
                                       class="px-2 py-1 text-sm text-white bg-[#173e26] rounded hover:bg-[#24542f]">Investment</Link>
