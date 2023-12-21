@@ -157,7 +157,7 @@ const Lifecycle = () => {
         </Link>
         <text id="Pre-Implementation" transform="translate(534 1658)" fill="#145b41" font-size="25" font-family="Helvetica"><tspan x="0" y="0">Pre-Implementation</tspan></text>
         <text id="Implementation" transform="translate(873 1658)" fill="#145b41" font-size="25" font-family="Helvetica"><tspan x="0" y="0">Implementation</tspan></text>
-        <text id="Operating" transform="translate(1205 1658)" fill="#145b41" font-size="25" font-family="Helvetica"><tspan x="0" y="0">Operating</tspan></text>
+        <text id="Operating" transform="translate(1205 1658)" fill="#145b41" font-size="25" font-family="Helvetica"><tspan x="0" y="0">Operation</tspan></text>
       </g>
     </g>
   </svg>
@@ -317,7 +317,7 @@ const Lifecycle = () => {
         </Link>
       </g>
       <text id="Pre-Implementation" transform="translate(129 750)" fill="#145b41" font-size="18" font-family="Helvetica"><tspan x="0" y="0">Pre-Implementation</tspan></text>
-      <text id="Operating" transform="translate(156 1380.328)" fill="#145b41" font-size="18" font-family="Helvetica"><tspan x="0" y="0">Operating</tspan></text>
+      <text id="Operating" transform="translate(156 1380.328)" fill="#145b41" font-size="18" font-family="Helvetica"><tspan x="0" y="0">Operation</tspan></text>
       <text id="Implementation_" data-name="Implementation
   " transform="translate(134 1067)" fill="#145b41" font-size="18" font-family="Helvetica"><tspan x="0" y="0">Implementation</tspan><tspan font-family="SegoeUI, Segoe UI"><tspan x="0" y="22"></tspan></tspan></text>
     </g>

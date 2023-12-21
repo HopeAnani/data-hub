@@ -59,7 +59,7 @@ const SearchBar = () => {
         />
         <div className='space-x-2 p-2'>
         <button
-          className={`bg-[#173e26] text-white p-2 rounded hover:bg-[#153722] w-24 btn ${
+          className={`bg-[#173e26] text-white p-2 rounded hover:bg-[#153722] w-24 btn md:hidden ${
             searchTerm.trim() === '' ? 'cursor-not-allowed' : ''
           }`}
           onClick={handleApplyFilters}

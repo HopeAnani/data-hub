@@ -13,7 +13,7 @@ const Explore = () => {
       <div className='w-[80%] float-left container sidediv'>
         <SearchBar/>
         <Sidecarddata/>
-        <FlipBook/>
+        {/* <FlipBook/> */}
       </div>
       <div className='w-[20%] float-right sidenav'><Sidebar/></div>
       
