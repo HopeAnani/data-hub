@@ -39,7 +39,7 @@ const Steps = () => {
   }, []); // Empty dependency array to ensure the effect runs only once
 
   return (
-    <div className='flex justify-center items-center min-h-[100vh]'>
+    <div className='flex justify-center items-center h-full'>
       <div className='box'>
         <div className="icon">
           <div className="imgBx active" style={{ '--i': 1 }} data-id="content1">

@@ -42,10 +42,10 @@ const Sidebar = () => {
           </Link>
           <ul>
             <li>
-              <Link to="">Regulatory Repository</Link>
+              <Link to="/explore/regulatory">Regulatory Repository</Link>
             </li>
             <li>
-              <Link to="">Strategy Repository</Link>
+              <Link to="/explore/Strategy-repository">Strategy Repository</Link>
             </li>
             <li>
               <Link to="">Important Links</Link>
