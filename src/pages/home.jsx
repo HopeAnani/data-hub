@@ -4,7 +4,7 @@ import LandingPage from '../components/landingpage';
 import Lifecycle from '../components/lifecycle';
 import Elements from '../components/elements';
 
-const Home = () => {
+const Home = () => {  
   return (
     <>
     <LandingPage/>
@@ -80,7 +80,7 @@ const Home = () => {
         </div>
       </div>
     </div>
-    <Lifecycle/>
+    <Lifecycle/>  
     <h1 class="text-[#173e26] text-3xl text-center font-bold pb-[40px]">Data Indicators</h1>
     <ImageAccordion/>
     <h1 class="text-[#173e26] text-3xl text-center font-bold pt-6 pb-[40px]">Regulatory Overview</h1>

@@ -1,10 +1,9 @@
 import React from 'react'
+import Steps from '../components/steps'
 
 const About = () => {
   return (
-    <div>
-      <p>About Us</p>
-    </div>
+    <Steps/>
   )
 }
 
