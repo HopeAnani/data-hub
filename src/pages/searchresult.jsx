@@ -4,7 +4,7 @@ import {Pagination,Button} from "@nextui-org/react";
 
 
 const Result= () => {
-    const [currentPage, setCurrentPage] = React.useState(1);
+  const [currentPage, setCurrentPage] = React.useState(1);
   return (
       <div class="overflow-x-hidden bg-gray-100">
           <div class="px-6 py-8">
@@ -197,7 +197,7 @@ const Result= () => {
       <Pagination
         total={10}
         page={currentPage}
-        // color='success'
+        color='success'
         onChange={setCurrentPage}
         className=' bg-transparent'
       />

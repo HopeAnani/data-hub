@@ -2,11 +2,11 @@ import React from "react";
 import Sidebar from "../components/sidebar";
 import Sidecarddata from "../components/sidecarddata";
 import SearchBar from "../components/Searchbar";
-import FlipBook from "../components/FlipBook";
 import "../styles/explore.css";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
 import  Result  from "../pages/searchresult.jsx";
 import Policies from "./National Strategies and Policies.jsx";
+import Links from "./importanlinks.jsx";
 
 const Explore = () => {
   return (
@@ -18,6 +18,7 @@ const Explore = () => {
             <Route path="/" exact element={<Sidecarddata />} />
             <Route path="/National-strategies-and-policies" element={<Policies />} />
             <Route path="/Strategy-repository" element={<Result/>}/>
+            <Route path="/Important-links" element={<Links/>}/>
           </Routes>
           {/* <FlipBook/> */}
         </div>

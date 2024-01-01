@@ -48,7 +48,7 @@ const Sidebar = () => {
               <Link to="/explore/Strategy-repository">Business Regulatory Framework</Link>
             </li>
             <li>
-              <Link to="">Important Links</Link>
+              <Link to="/explore/Important-links">Important Links</Link>
             </li>
           </ul>
         </li>
