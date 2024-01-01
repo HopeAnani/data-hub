@@ -5,8 +5,8 @@ import SearchBar from "../components/Searchbar";
 import FlipBook from "../components/FlipBook";
 import "../styles/explore.css";
 import { Routes, Route } from "react-router-dom";
-import Steps from "../components/steps";
 import  Result  from "../pages/searchresult.jsx";
+import Policies from "./National Strategies and Policies.jsx";
 
 const Explore = () => {
   return (
@@ -16,7 +16,7 @@ const Explore = () => {
           <SearchBar />
           <Routes>
             <Route path="/" exact element={<Sidecarddata />} />
-            <Route path="/regulatory" element={<Steps />} />
+            <Route path="/National-strategies-and-policies" element={<Policies />} />
             <Route path="/Strategy-repository" element={<Result/>}/>
           </Routes>
           {/* <FlipBook/> */}

@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import {Pagination,Button} from "@nextui-org/react";
 
 
 const Result= () => {
+    const [currentPage, setCurrentPage] = React.useState(1);
   return (
       <div class="overflow-x-hidden bg-gray-100">
           <div class="px-6 py-8">
@@ -180,6 +182,36 @@ const Result= () => {
                               </Link>
                           </div>
                       </div>
+                      <div className="flex flex-col gap-5">
+      <p className="text-small text-default-500">Selected Page: {currentPage}</p>
+      <div className='flex gap-2'>
+      <Button
+          size="sm"
+          variant="flat"
+          color="secondary"
+          onPress={() => setCurrentPage((prev) => (prev > 1 ? prev - 1 : prev))}
+          class="px-3 py-2 mx-1 font-medium text-[#173e26] bg-white rounded-md hover:bg-[#24542f] hover:text-white"
+        >
+          Previous
+        </Button>
+      <Pagination
+        total={10}
+        page={currentPage}
+        // color='success'
+        onChange={setCurrentPage}
+        className=' bg-transparent'
+      />
+        <Button
+          size="sm"
+          variant="flat"
+          color="secondary"
+          onPress={() => setCurrentPage((prev) => (prev < 10 ? prev + 1 : prev))}
+          class="px-3 py-2 mx-1 font-medium text-[#173e26] bg-white rounded-md hover:bg-[#24542f] hover:text-white"
+        >
+          Next
+        </Button>
+        </div>
+    </div>
                   </div>
                   <div class="hidden w-4/12 -mx-8 lg:block">
                       <div class="px-8">

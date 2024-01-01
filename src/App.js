@@ -6,6 +6,7 @@ import About from "./pages/about";
 import Explore from "./pages/explore";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Result from "./pages/searchresult";
+import { NextUIProvider } from "@nextui-org/react";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -15,6 +16,7 @@ const App = () => {
   }, [pathname]);
 
   return (
+    <NextUIProvider>
     <div className="block">
       <Navbar />
       <Routes>
@@ -26,6 +28,7 @@ const App = () => {
       </Routes>
       <Footer />
     </div>
+    </NextUIProvider>
   );
 };
 

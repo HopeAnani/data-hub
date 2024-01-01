@@ -14,11 +14,11 @@ const Home = () => {
         <img
           className="w-full h-48 object-cover object-center"
           src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-          alt='Investment'
+          alt='Regulatory & Strategy Repository'
         />
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Regulatory & Strategy Repository</h2>
-          <p className="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam illum unde tempore voluptas? Neque eius accusamus, atque laboriosam quidem, numquam veniam deserunt, modi iure optio obcaecati nihil minima at quae?</p>
+          <p className="text-gray-600 mb-4 text-justify">The Strategy and Regulatory Frameworks is a collection of documents and links that enable you to understand the Ethiopian government's strategy and regulatory frameworks. National strategies and policies and Business regulatory frameworks (such as directives and proclamations) are among some of the documents available for your viewing.</p>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
@@ -32,11 +32,11 @@ const Home = () => {
         <img
           className="w-full h-48 object-cover object-center"
           src="https://images.unsplash.com/photo-1633158829875-e5316a358c6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-          alt='Economy'
+          alt='Investment Lifecycle'
         />
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Investment Lifecycle</h2>
-          <p className="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis similique modi libero! Itaque et praesentium ut corporis rem error natus laudantium vitae hic, officia, ex dicta, inventore autem nemo iste.</p>
+          <p className="text-gray-600 mb-4 text-justify">ACE Advisors has outlined and broken down investment in Ethiopia into a tri-phased investment cycle, with each phase entailing a specific set of paperwork and processes. In the course of understanding the Ethiopian Investment ecosystem, ACE Advisors can offer you a comprehensive investment guide. </p>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
@@ -50,11 +50,11 @@ const Home = () => {
         <img
           className="w-full h-48 object-cover object-center"
           src="https://images.unsplash.com/photo-1572276037952-478cead56982?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-          alt='Economy'
+          alt='Data Repository'
         />
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Data Repository</h2>
-          <p className="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut consequuntur expedita adipisci blanditiis nemo quos sed deleniti illum saepe rem voluptatem earum repellendus aliquid aperiam dolorum tenetur, fugiat veniam?</p>
+          <p className="text-gray-600 mb-4 text-justify">Investment Data Indicators are a collection of quantitative data indicators pertaining to investments either indirectly or directly. In order to simplify accessibility, navigation, and understanding, ACE organizes the data by year and region and presents findings in the form of comprehensible visualizations (graphs and diagrams).</p>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
@@ -67,11 +67,11 @@ const Home = () => {
         <img
           className="w-full h-48 object-cover object-center"
           src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-          alt='Economy'
+          alt='ACE services'
         />
         <div className="p-6">
-          <h2 className="text-xl font-semibold mb-2 text-center">Ace Services</h2>
-          <p className="text-gray-600 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. In aut consequuntur expedita adipisci blanditiis nemo quos sed deleniti illum saepe rem voluptatem earum repellendus aliquid aperiam dolorum tenetur, fugiat veniam?</p>
+          <h2 className="text-xl font-semibold mb-2 text-center">ACE Services</h2>
+          <p className="text-gray-600 mb-4 text-justify">In the course of doing business, you may face the need to seek professional services to assist in various processes. With ACE advisors, prospective investors have access to a wide range of services, from stakeholder analysis to strategy and program design.</p>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >

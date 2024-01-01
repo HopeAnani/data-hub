@@ -42,10 +42,10 @@ const Sidebar = () => {
           </Link>
           <ul>
             <li>
-              <Link to="/explore/regulatory">Regulatory Repository</Link>
+              <Link to="/explore/National-strategies-and-policies">National Strategies & Policies</Link>
             </li>
             <li>
-              <Link to="/explore/Strategy-repository">Strategy Repository</Link>
+              <Link to="/explore/Strategy-repository">Business Regulatory Framework</Link>
             </li>
             <li>
               <Link to="">Important Links</Link>
