@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import '../styles/lifecycle.css'
 
 const Lifecycle = () => {
   return (
@@ -156,6 +157,7 @@ const Lifecycle = () => {
         </g>
         </Link>
         <text id="Pre-Implementation" transform="translate(534 1658)" fill="#145b41" font-size="25" font-family="Helvetica"><tspan x="0" y="0">Pre-Implementation</tspan></text>
+        <div className='bg-[#173e26] hidden w-96 h-96' id='View'></div>
         <text id="Implementation" transform="translate(873 1658)" fill="#145b41" font-size="25" font-family="Helvetica"><tspan x="0" y="0">Implementation</tspan></text>
         <text id="Operating" transform="translate(1205 1658)" fill="#145b41" font-size="25" font-family="Helvetica"><tspan x="0" y="0">Operation</tspan></text>
       </g>

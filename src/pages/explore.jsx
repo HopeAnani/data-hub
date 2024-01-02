@@ -1,12 +1,12 @@
-import React from "react";
+import React, { Component } from "react";
 import Sidebar from "../components/sidebar";
-import Sidecarddata from "../components/sidecarddata";
 import SearchBar from "../components/Searchbar";
 import "../styles/explore.css";
 import { Routes, Route, Link } from "react-router-dom";
 import  Result  from "../pages/searchresult.jsx";
 import Policies from "./National Strategies and Policies.jsx";
 import Links from "./importanlinks.jsx";
+import Explorecomp from "../components/explorecomp.jsx";
 
 const Explore = () => {
   return (
@@ -15,7 +15,7 @@ const Explore = () => {
         <div className="w-[80%] float-left container sidediv">
           <SearchBar />
           <Routes>
-            <Route path="/" exact element={<Sidecarddata />} />
+            <Route path="/" exact element={<Explorecomp/>} />
             <Route path="/National-strategies-and-policies" element={<Policies />} />
             <Route path="/Strategy-repository" element={<Result/>}/>
             <Route path="/Important-links" element={<Links/>}/>
