@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import '../styles/sidebar.css';
-import { AiFillCaretDown, AiFillCaretLeft, AiFillCaretRight, AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai';
+import { AiFillCaretDown,  AiOutlineMenuFold, } from 'react-icons/ai';
 
 const Sidebar = () => {
   const handleLinkClick = (event) => {
@@ -37,7 +37,7 @@ const Sidebar = () => {
       <div className="sideText">Side Menu</div> 
       <ul className="list-none">
         <li>
-          <Link to="" onClick={handleLinkClick}>
+          <Link  onClick={handleLinkClick}>
             Regulatory & Strategy <AiFillCaretDown className="inline caret" />
           </Link>
           <ul>
@@ -53,7 +53,7 @@ const Sidebar = () => {
           </ul>
         </li>
         <li>
-          <Link to="" onClick={handleLinkClick}>
+          <Link onClick={handleLinkClick}>
             Investment Lifecycle <AiFillCaretDown className="inline caret" />
           </Link>
           <ul>
@@ -69,7 +69,7 @@ const Sidebar = () => {
           </ul>
         </li>
         <li>
-          <Link to="" onClick={handleLinkClick}>
+          <Link onClick={handleLinkClick}>
             Data Repository <AiFillCaretDown className="inline caret" />
           </Link>
           <ul>
@@ -94,7 +94,7 @@ const Sidebar = () => {
           </ul>
         </li>
         <li>
-          <Link to="" onClick={handleLinkClick}>Ace Services</Link>
+          <Link onClick={handleLinkClick}>Ace Services</Link>
         </li>
       <div className=' h-20'></div>
       </ul>

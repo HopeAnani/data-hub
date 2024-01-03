@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import Sidebar from "../components/sidebar";
 import SearchBar from "../components/Searchbar";
 import "../styles/explore.css";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import  Result  from "../pages/searchresult.jsx";
 import Policies from "./National Strategies and Policies.jsx";
 import Links from "./importanlinks.jsx";
@@ -12,7 +12,7 @@ const Explore = () => {
   return (
     <>
       <div className="w-[100%] clear-both h-max">
-        <div className="w-[80%] float-left container sidediv">
+        <div className="w-[80%] float-left container sidediv justify-center">
           <SearchBar />
           <Routes>
             <Route path="/" exact element={<Explorecomp/>} />
