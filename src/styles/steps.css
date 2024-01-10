@@ -26,7 +26,7 @@
     border: 1px solid #173e26;
     box-shadow: 0 0 0 4px #f2f5f7,
     0 0 0 6px #173e26;
-    transform: rotate(calc(360deg/5 * var(--i)));
+    transform: rotate(calc(360deg/3 * var(--i)));
     transform-origin: 340px;
     z-index: 1;
     overflow: hidden;
@@ -44,7 +44,7 @@
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    transform: rotate(calc(-360deg/5 * var(--i)));
+    transform: rotate(calc(-360deg/3 * var(--i)));
     transition: 0.5s;
     filter: grayscale(1);
 }

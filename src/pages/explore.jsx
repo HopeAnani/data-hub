@@ -7,7 +7,7 @@ import  Result  from "../pages/searchresult.jsx";
 import Policies from "./National Strategies and Policies.jsx";
 import Links from "./importanlinks.jsx";
 import Explorecomp from "../components/explorecomp.jsx";
-
+import Invlifecycle from "../pages/lnv-lifecycle.jsx"
 const Explore = () => {
   return (
     <>
@@ -19,6 +19,7 @@ const Explore = () => {
             <Route path="/National-strategies-and-policies" element={<Policies />} />
             <Route path="/Strategy-repository" element={<Result/>}/>
             <Route path="/Important-links" element={<Links/>}/>
+            <Route path="/Investment-Lifecycle" element={<Invlifecycle/>} />
           </Routes>
           {/* <FlipBook/> */}
         </div>

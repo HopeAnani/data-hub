@@ -53,7 +53,7 @@ const Sidebar = () => {
           </ul>
         </li>
         <li>
-          <Link onClick={handleLinkClick}>
+          <Link to="/explore/Investment-Lifecycle" onClick={handleLinkClick}>
             Investment Lifecycle <AiFillCaretDown className="inline caret" />
           </Link>
           <ul>
