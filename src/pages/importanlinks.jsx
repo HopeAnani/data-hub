@@ -16,6 +16,12 @@ const Links = () => {
   }, [page, users]);
 
   return (
+    <>
+    <div className='ml-4 md:ml-12 mb-4 md:mb-10'>
+      <h1 className='text-2xl md:text-5xl font-semibold leading-tight text-[#173e26]'>
+        Important Links
+      </h1>
+    </div>
     <Table className='h-[100vh] ml-10'
       isStriped aria-label="Example static collection table"
       bottomContent={
@@ -39,18 +45,29 @@ const Links = () => {
       }}
     >
       <TableHeader>
-        <TableColumn key="name">Organization Name</TableColumn>
-        <TableColumn key="role">Description</TableColumn>
-        <TableColumn key="status">Link</TableColumn>
+        <TableColumn key="name" className=' font-extrabold text-[#173e26] text-lg'>Organization Name</TableColumn>
+        <TableColumn key="description" className=' font-extrabold text-[#173e26] text-lg'>Description</TableColumn>
+        <TableColumn key="link" className=' font-extrabold text-[#173e26] text-lg'>Link</TableColumn>
       </TableHeader>
       <TableBody items={items}>
         {(item) => (
           <TableRow key={item.name}>
-            {(columnKey) => <TableCell>{getKeyValue(item, columnKey)}</TableCell>}
+            {(columnKey) => (
+                <TableCell>
+                  {columnKey === "link" ? (
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                      Visit Website
+                    </a>
+                  ) : (
+                    getKeyValue(item, columnKey)
+                  )}
+                </TableCell>
+              )}
           </TableRow>
         )}
       </TableBody>
     </Table>
+    </>
   )
 }
 

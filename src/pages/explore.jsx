@@ -8,6 +8,7 @@ import Policies from "./National Strategies and Policies.jsx";
 import Links from "./importanlinks.jsx";
 import Explorecomp from "../components/explorecomp.jsx";
 import Invlifecycle from "../pages/lnv-lifecycle.jsx"
+import Buisness from "./Buisness and regulatory.jsx";
 const Explore = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const Explore = () => {
             <Route path="/Strategy-repository" element={<Result/>}/>
             <Route path="/Important-links" element={<Links/>}/>
             <Route path="/Investment-Lifecycle" element={<Invlifecycle/>} />
+            <Route path="/Buisness-and-regulatory-framework" element={<Buisness/>} />
           </Routes>
           {/* <FlipBook/> */}
         </div>

@@ -45,7 +45,7 @@ const Sidebar = () => {
               <Link to="/explore/National-strategies-and-policies">National Strategies & Policies</Link>
             </li>
             <li>
-              <Link to="/explore/Strategy-repository">Business Regulatory Framework</Link>
+              <Link to="/explore/Buisness-and-regulatory-framework">Business Regulatory Framework</Link>
             </li>
             <li>
               <Link to="/explore/Important-links">Important Links</Link>
