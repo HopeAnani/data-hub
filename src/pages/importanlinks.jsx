@@ -22,7 +22,7 @@ const Links = () => {
         Important Links
       </h1>
     </div>
-    <Table className='h-[100vh] ml-10'
+    <Table className='h-[100vh] max-lg:ml-0 ml-10'
       isStriped aria-label="Example static collection table"
       bottomContent={
         <div className="flex w-full justify-center">

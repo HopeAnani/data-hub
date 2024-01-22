@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import '../styles/steps.css';
+import one from '../images/one.png'
 
 const Steps = () => {
   useEffect(() => {
@@ -43,7 +44,7 @@ const Steps = () => {
       <div className='box'>
         <div className="icon">
           <div className="imgBx active" style={{ '--i': 1 }} data-id="content1">
-            <img src="https://images.unsplash.com/photo-1557576146-047908becbb4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TnVtYmVyJTIwMXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
+            <img src={one} alt="" />
           </div>
           <div className="imgBx" style={{ '--i': 2 }} data-id="content2">
             <img src="https://images.unsplash.com/photo-1557576146-047908becbb4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TnVtYmVyJTIwMXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
@@ -64,10 +65,10 @@ const Steps = () => {
           <div className="contenttBx active" id="content1">
             <div className="card">
               <div className="imgBx">
-                <img src="https://images.unsplash.com/photo-1636607709775-7184d513709f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE51bWJlciUyMDF8ZW58MHx8MHx8fDA%3D" alt="" />
+                <img src={one} alt="" />
               </div>
               <div className="textBx">
-                <h2>Step 1</h2>
+                <h2>Pre-Implementation</h2>
                 <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minima nulla deleniti sapiente modi molestias illum quo, ab deserunt corporis quasi temporibus asperiores.  </p>
               </div>
             </div>
@@ -75,10 +76,10 @@ const Steps = () => {
           <div className="contenttBx" id="content2">
             <div className="card">
               <div className="imgBx">
-                <img src="https://images.unsplash.com/photo-1636607709775-7184d513709f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE51bWJlciUyMDF8ZW58MHx8MHx8fDA%3D" alt="" />
+                <img src="https://images.unsplash.com/photo-1621440318431-b720cd358375?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
               </div>
               <div className="textBx">
-                <h2>Step 2</h2>
+                <h2>Implementation</h2>
                 <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minima nulla deleniti sapiente modi molestias illum quo, ab deserunt corporis quasi temporibus asperiores.  </p>
               </div>
             </div>
@@ -86,37 +87,14 @@ const Steps = () => {
           <div className="contenttBx" id="content3">
             <div className="card">
               <div className="imgBx">
-                <img src="https://images.unsplash.com/photo-1636607709775-7184d513709f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE51bWJlciUyMDF8ZW58MHx8MHx8fDA%3D" alt="" />
+                <img src="https://images.unsplash.com/photo-1621440318357-3e3c94221a1c?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
               </div>
               <div className="textBx">
-                <h2>Step 3</h2>
+                <h2>Operation</h2>
                 <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minima nulla deleniti sapiente modi molestias illum quo, ab deserunt corporis quasi temporibus asperiores.  </p>
               </div>
             </div>
           </div>
-          {/* <div className="contenttBx" id="content4">
-            <div className="card">
-              <div className="imgBx">
-                <img src="https://images.unsplash.com/photo-1636607709775-7184d513709f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE51bWJlciUyMDF8ZW58MHx8MHx8fDA%3D" alt="" />
-              </div>
-              <div className="textBx">
-                <h2>Step 4</h2>
-                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minima nulla deleniti sapiente modi molestias illum quo, ab deserunt corporis quasi temporibus asperiores.  </p>
-              </div>
-            </div>
-          </div> */}
-          {/* <div className="contenttBx" id="content5">
-            <div className="card">
-              <div className="imgBx">
-                <img src="https://images.unsplash.com/photo-1636607709775-7184d513709f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fE51bWJlciUyMDF8ZW58MHx8MHx8fDA%3D." alt="" />
-              </div>
-              <div className="textBx">
-                <h2>Step 5</h2>
-                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minima nulla deleniti sapiente modi molestias illum quo, ab deserunt corporis quasi temporibus asperiores.  </p>
-              </div>
-            </div>
-          </div> */}
-          {/* Add more contenttBx elements for additional steps */}
         </div>
       </div>
     </div>

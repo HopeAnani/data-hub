@@ -22,10 +22,10 @@ const Sidebar = () => {
        {/* <div>
         <AiFillCaretLeft/>
       </div> */}
-      <input type="checkbox" id="sidecheck"></input>
+      {/* <input type="checkbox" id="sidecheck"></input>
       <label for="sidecheck">
 			  <span class="spann" id="bars" onclick="contentMove('r')"><AiOutlineMenuFold size={25}/></span>
-		  </label>
+		  </label> */}
 
     {/* <input type="checkbox" id="drawer-toggle" class="relative sr-only peer" checked/>
     <label for="drawer-toggle" class="absolute left-0 inline-block p-4 transition-all duration-500 bg-indigo-500 rounded-lg peer-checked:rotate-180 peer-checked:left-64">
@@ -37,7 +37,7 @@ const Sidebar = () => {
       <div className="sideText">Side Menu</div> 
       <ul className="list-none">
         <li>
-          <Link  onClick={handleLinkClick}>
+          <Link  onClick={handleLinkClick} to='/explore/Regulatory-and-Strategy'>
             Regulatory & Strategy <AiFillCaretDown className="inline caret" />
           </Link>
           <ul>
@@ -58,13 +58,13 @@ const Sidebar = () => {
           </Link>
           <ul>
             <li>
-              <Link to="">Pre-implementation</Link>
+              <Link to="/explore/Pre-implementation">Pre-implementation</Link>
             </li>
             <li>
-              <Link to="">Implementation</Link>
+              <Link to="/explore/Implementation">Implementation</Link>
             </li>
             <li>
-              <Link to="">Operating</Link>
+              <Link to="/explore/Operation">Operation</Link>
             </li>
           </ul>
         </li>
@@ -74,27 +74,27 @@ const Sidebar = () => {
           </Link>
           <ul>
             <li>
-              <Link to="">Economy</Link>
+              <Link to="/explore/data-repository/Economy">Economy</Link>
             </li>
             <li>
-              <Link to="">Trade</Link>
+              <Link to="/explore/data-repository/Trade">Trade</Link>
             </li>
             <li>
-              <Link to="">Social</Link>
+              <Link to="/explore/data-repository/Social">Social</Link>
             </li>
             <li>
-              <Link to="">Investment</Link>
+              <Link to="/explore/data-repository/Investment">Investment</Link>
             </li>
             <li>
-              <Link to="">Infrastructure</Link>
+              <Link to="/explore/data-repository/Infrastructure">Infrastructure</Link>
             </li>
             <li>
-              <Link to="">Doing Buisness</Link>
+              <Link to="/explore/data-repository/Doing-Business">Doing Buisness</Link>
             </li>
           </ul>
         </li>
         <li>
-          <Link onClick={handleLinkClick}>Ace Services</Link>
+          <Link onClick={handleLinkClick}>ACE Services</Link>
         </li>
       <div className=' h-20'></div>
       </ul>

@@ -87,8 +87,19 @@ const SearchBar = () => {
                 className="w-full p-2 border rounded"
               >
                 <option value="All">All Regions</option>
+                <option value="Addis Ababa">Addis Ababa</option>
+                <option value="Dire Dawa">Dire Dawa</option>
                 <option value="Oromia">Oromia</option>
+                <option value="Tigray">Tigray</option>
+                <option value="Amhara">Amhara</option>
                 <option value="Harar">Harar</option>
+                <option value="Somali">Somali</option>
+                <option value="Benishangul">Benishangul</option>
+                <option value="Sidama">Sidama</option>
+                <option value="SNNPR">Southern Nations and Nationalities and People's</option>
+                <option value="Gambella">Gambella</option>
+                <option value="South Ethiopia">South Ethiopia</option>
+
                 {/* Add more regions as needed */}
               </select>
             </div>
@@ -102,7 +113,11 @@ const SearchBar = () => {
               >
                 <option value="All">Data Types</option>
                 <option value="Economy">Economy</option>
+                <option value="Trade">Trade</option>
+                <option value="Infrastructure">Social</option>
+                <option value="Investment">Investment</option>
                 <option value="Infrastructure">Infrastructure</option>
+                <option value="Infrastructure">Doing Business</option>
                 {/* Add more data types as needed */}
               </select>
             </div>

@@ -7,7 +7,7 @@ import sample4 from '../images/Samplepdf.pdf';
 import sample5 from '../images/Samplepdf.pdf';
 import { Link } from 'react-router-dom';
 
-const Buisness = () => {
+const Business = () => {
   const accordionData = [
     {
       title: 'Economy',
@@ -111,4 +111,4 @@ const Buisness = () => {
   );
 }
 
-export default Buisness
+export default Business

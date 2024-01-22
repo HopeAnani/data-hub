@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import "../styles/nav.css";
 import Header from "./Header";
-import ace_logo from "../images/ace_logo_white.png";
+import ace_logo from "../images/ADHF.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -26,12 +26,12 @@ const Navbar = () => {
       <Header />
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
         <h1 className=" text-2xl font-semibold flex align-middle">
-          <img src={ace_logo} className=" w-20" alt="" />{" "}
+          <Link to ="/"><img src={ace_logo} className=" w-20" alt="" /></Link>
           <span className="AIDH">
-            <span className="text-[45px]"> | </span>ACE Investment Data Hub
+            <span className="text-[45px]"> | </span>ACE Data Hub
           </span>
           <span className="IDH hidden">
-            <span className="text-[45px]"> | </span>IDH
+            <span className="text-[45px]"> | </span>ADH
           </span>
         </h1>
         <ul className="hidden  md:flex">
@@ -46,10 +46,10 @@ const Navbar = () => {
           </li>
           <li className="p-4 list">
             {/* <a href="/">About us</a> */}
-            <Link to="/about">About us</Link>
+            <Link to="https://aceadvisors.org/about-us/">About us</Link>
           </li>
           <li className="p-4 list">
-            <a href="mailto:ananisamuelhope@gmail.com">
+            <a href="mailto:contact.aceadvisors.org">
               <AiFillMail size={25} />
             </a>
 
@@ -82,7 +82,7 @@ const Navbar = () => {
             </li>
             <li className="p-4 border-b border-gray-600">
               {/* <a href="/">About us</a> */}
-              <Link to="/about">About us</Link>
+              <Link to="https://aceadvisors.org/about-us/">About us</Link>
             </li>
             <li className="p-4 border-b border-gray-600 flex">
               <a href="mailto:ananisamuelhope@gmail.com" className="flex">
