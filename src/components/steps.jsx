@@ -71,7 +71,7 @@ const Steps = () => {
               </div>
               <div className="textBx">
                 <h2>Pre-Implementation</h2>
-                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minima nulla deleniti sapiente modi molestias illum quo, ab deserunt corporis quasi temporibus asperiores.  </p>
+                <p className='para'>The pre-implementation stage of a business involves crucial pre-launch processes such as securing the necessary licenses required for activities in the implementation stage.</p>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ const Steps = () => {
               </div>
               <div className="textBx">
                 <h2>Implementation</h2>
-                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minima nulla deleniti sapiente modi molestias illum quo, ab deserunt corporis quasi temporibus asperiores.  </p>
+                <p className='para'>The implementation stage of a business is when the bulk of physical work such as construction gets underway before officially launching operations.</p>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Steps = () => {
               </div>
               <div className="textBx">
                 <h2>Operation</h2>
-                <p className='para'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, minima nulla deleniti sapiente modi molestias illum quo, ab deserunt corporis quasi temporibus asperiores.  </p>
+                <p className='para'>The operation stage commences as soon as the business opens and enters into full-fledged business activity, and includes fulfilling remaining licensing requirements.</p>
               </div>
             </div>
           </div>
