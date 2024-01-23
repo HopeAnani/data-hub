@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Elements = () => {
   return (
@@ -13,11 +14,13 @@ const Elements = () => {
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Proclamation</h2>
           <p className="text-gray-600 mb-4 text-justify">This section contains a collection of proclamations issued by the government of Ethiopia related to the investment ecosystem. Proclamations establish new policies, programs, or legal codes that have broad and long-lasting effects throughout the country.</p>
+          <Link to='/explore/Regulatory-and-Strategy'>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
             Read More
           </button>
+          </Link>
         </div>
       </div>
 
@@ -31,11 +34,13 @@ const Elements = () => {
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Regulation</h2>
           <p className="text-gray-600 mb-4 text-justify">This section contains a collection of regulations issued by the government of Ethiopia related to the investment ecosystem. Regulations provide specific guidelines, procedures, or standards for how proclamations should be implemented.</p>
+          <Link to='/explore/Regulatory-and-Strategy'>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
             Read More
           </button>
+          </Link>
         </div>
       </div>
 
@@ -49,11 +54,13 @@ const Elements = () => {
         <div className="p-6 justify-center items-center">
           <h2 className="text-xl font-semibold mb-2 text-center">Directives</h2>
           <p className="text-gray-600 mb-4 text-justify">This section contains a collection of directives issued by the government of Ethiopia related to the investment ecosystem. Directives communicate requirements and expectations to help ensure proclamations and regulations are properly carried out.</p>
+          <Link to='/explore/Regulatory-and-Strategy'>
           <button
-            className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c] mx-auto"
+            className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
             Read More
           </button>
+          </Link>
         </div>
       </div>
     </div>

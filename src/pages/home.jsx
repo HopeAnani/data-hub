@@ -3,6 +3,7 @@ import ImageAccordion from '../components/ImageAccordion';
 import LandingPage from '../components/landingpage';
 import Lifecycle from '../components/lifecycle';
 import Elements from '../components/elements';
+import { Link } from 'react-router-dom';
 
 const Home = () => {  
   return (
@@ -19,11 +20,13 @@ const Home = () => {
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Regulatory & Strategy Repository</h2>
           <p className="text-gray-600 mb-4 text-justify">The Strategy and Regulatory Frameworks is a collection of documents and links that enable you to understand the Ethiopian government's strategy and regulatory frameworks. National strategies and policies and Business regulatory frameworks (such as directives and proclamations) are among some of the documents available for your viewing.</p>
+          <Link to='/explore'>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
             Read More
           </button>
+          </Link>
         </div>
       </div>
 
@@ -37,11 +40,13 @@ const Home = () => {
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Investment Lifecycle</h2>
           <p className="text-gray-600 mb-4 text-justify">ACE Advisors has outlined and broken down investment in Ethiopia into a tri-phased investment cycle, with each phase entailing a specific set of paperwork and processes. In the course of understanding the Ethiopian Investment ecosystem, ACE Advisors can offer you a comprehensive investment guide. </p>
+          <Link to='/explore'>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
             Read More
           </button>
+          </Link>
         </div>
       </div>
 
@@ -55,11 +60,13 @@ const Home = () => {
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Data Repository</h2>
           <p className="text-gray-600 mb-4 text-justify">Investment Data Indicators are a collection of quantitative data indicators pertaining to investments either indirectly or directly. In order to simplify accessibility, navigation, and understanding, ACE organizes the data by year and region and presents findings in the form of comprehensible visualizations (graphs and diagrams).</p>
+          <Link to='/explore'>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
             Read More
           </button>
+          </Link>
         </div>
       </div>
       {/* Card 4 */}
@@ -72,11 +79,13 @@ const Home = () => {
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">ACE Services</h2>
           <p className="text-gray-600 mb-4 text-justify">In the course of doing business, you may face the need to seek professional services to assist in various processes. With ACE advisors, prospective investors have access to a wide range of services, from stakeholder analysis to strategy and program design.</p>
+          <Link to='/explore'>
           <button
             className="bg-[#173e26] text-white p-2 rounded w-24 hover:bg-[#112e1c]"
           >
             Read More
           </button>
+          </Link>
         </div>
       </div>
     </div>

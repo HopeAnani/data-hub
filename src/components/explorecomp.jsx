@@ -3,6 +3,7 @@ import pic from '../images/Business Plan-amico.png'
 import pic2 from '../images/Statistics-bro.png'
 import pic3 from '../images/Visual data-amico.png'
 import pic4 from '../images/Analysis-amico.png'
+import { Link } from 'react-router-dom'
 
 const Explorecomp = () => {
   return (
@@ -14,8 +15,9 @@ const Explorecomp = () => {
                 <p className='mt-5 text-justify self-center text-lg'>
                     The Strategy and Regulatory Frameworks is a collection of documents and links that enable you to understand the Ethiopian government's strategy and regulatory frameworks. National strategies and policies and Business regulatory frameworks (such as directives and proclamations) are among some of the documents available for your viewing.
                 </p>
-
+                <Link to='/explore/Regulatory-and-Strategy'>
                 <button className="bg-[#173e26] text-white p-2 rounded w-fit hover:bg-[#112e1c] mt-10"> Know More</button>
+                </Link>
             </div>
             <div className='w-full md:w-2/4'>
                 <img src={pic} alt="" />
@@ -36,7 +38,9 @@ const Explorecomp = () => {
                 ACE Advisors has outlined and broken down investment in Ethiopia into a tri-phased investment cycle, with each phase entailing a specific set of paperwork and processes. In the course of understanding the Ethiopian Investment ecosystem, ACE Advisors can offer you a comprehensive investment guide. 
                 </p>
 
+                <Link to='/explore/Investment-Lifecycle'>
                 <button className="bg-[#173e26] text-white p-2 rounded w-fit hover:bg-[#112e1c] mt-10"> Know More</button>
+                </Link>
             </div>
 
             
@@ -51,7 +55,9 @@ const Explorecomp = () => {
                     The Strategy and Regulatory Frameworks is a collection of documents and links that enable you to understand the Ethiopian government's strategy and regulatory frameworks. National strategies and policies and Business regulatory frameworks (such as directives and proclamations) are among some of the documents available for your viewing.
                 </p>
 
+                <Link to='/explore/data-repository/Economy'>
                 <button className="bg-[#173e26] text-white p-2 rounded w-fit hover:bg-[#112e1c] mt-10"> Know More</button>
+                </Link>
             </div>
 
             <div className='w-full md:w-2/4'>
@@ -70,7 +76,9 @@ const Explorecomp = () => {
                     The Strategy and Regulatory Frameworks is a collection of documents and links that enable you to understand the Ethiopian government's strategy and regulatory frameworks. National strategies and policies and Business regulatory frameworks (such as directives and proclamations) are among some of the documents available for your viewing.
                 </p>
 
+                <Link to='/explore/ACE-Services'>
                 <button className="bg-[#173e26] text-white p-2 rounded w-fit hover:bg-[#112e1c] mt-10"> Know More</button>
+                </Link>
             </div>
 
             
