@@ -86,7 +86,14 @@ const Navbar = () => {
           }
         >
           {/* <h1 className='w-[30%] text-3xl font-bold m-4'>ACE IDH</h1> */}
-          <ul className={!nav ? "hidden md:flex" : "p-4 text-lg"} onClick={closeNav}>
+          <ul className={!nav ? "hidden md:flex" : "p-4 text-lg"} 
+              onClick={(event) => {
+              const clickedElement = event.target;
+              const textContent = clickedElement.textContent.trim();
+              if (textContent !== "Regulatory & Strategy") {
+                closeNav();
+              }
+            }}>
             <li className="p-4 border-b border-gray-600">
               {/* <a href="/">Home</a> */}
               <Link to="/">Home</Link>
