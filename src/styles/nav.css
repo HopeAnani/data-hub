@@ -33,6 +33,33 @@
     width: 100%;
 }
 
+.nav ul ul {
+    display: none;
+}
+
+.nav ul ul li {
+    margin-left: 10px;
+    line-height: 42px;
+    border-bottom: none;
+    padding: 1rem;
+    border-bottom-width: 1px;
+    border-color: rgb(75, 85, 99);
+  }
+
+.nav ul li.active .caret {
+    transform: translateY(-50%) rotate(-180deg);
+  }
+.nav ul li:active > ul {
+    display: block;
+  }
+.nav li.active ul {
+    display: block;
+}
+
+.nav ul li.active ul {
+    display: block;
+}
+
 @media (max-width:550px) {
     .AIDH {
         display: none;

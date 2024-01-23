@@ -4,6 +4,7 @@ import {
   AiFillPhone,
   AiOutlineClose,
   AiOutlineMenu,
+  AiFillCaretDown
 } from "react-icons/ai";
 import "../styles/nav.css";
 import Header from "./Header";
@@ -19,6 +20,20 @@ const Navbar = () => {
 
   const closeNav = () => {
     setNav(false);
+  };
+
+  const handleLinkClick = (event) => {
+    const clickedLink = event.currentTarget;
+    const clickedItem = clickedLink.parentNode;
+    const dropdownMenu = clickedItem.querySelector('ul');
+
+    // Toggle active class on clicked item
+    clickedItem.classList.toggle('active');
+
+    // Toggle active class on dropdown menu
+    if (dropdownMenu) {
+      dropdownMenu.classList.toggle('active');
+    }
   };
 
   return (
@@ -67,7 +82,7 @@ const Navbar = () => {
           className={
             !nav
               ? "fixed top-[-100%]"
-              : "fixed left-0 top-28 w-[100%] bg-gradient-to-b from-[#173e26] h-full ease-in-out duration-500"
+              : "fixed left-0 top-28 w-[100%] bg-gradient-to-b from-[#173e26] h-full ease-in-out duration-500 nav"
           }
         >
           {/* <h1 className='w-[30%] text-3xl font-bold m-4'>ACE IDH</h1> */}
@@ -79,6 +94,21 @@ const Navbar = () => {
             <li className="p-4 border-b border-gray-600">
               {/* <a href="/">Explore</a> */}
               <Link to="/explore">Explore</Link>
+            </li>
+            <li className="p-4 border-b border-gray-600">
+              {/* <a href="/">Explore</a> */}
+              <Link onClick={handleLinkClick} >Regulatory & Strategy <AiFillCaretDown className="inline caret" /></Link>
+              <ul>
+                <li>
+                  <Link to="/explore/National-strategies-and-policies">National Strategies & Policies</Link>
+                </li>
+                <li>
+                  <Link to="/explore/Buisness-and-regulatory-framework">Business Regulatory Framework</Link>
+                </li>
+                <li>
+                  <Link to="/explore/Important-links">Important Links</Link>
+                </li>
+              </ul>
             </li>
             <li className="p-4 border-b border-gray-600">
               {/* <a href="/">About us</a> */}

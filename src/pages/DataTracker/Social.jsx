@@ -1,8 +1,11 @@
 import React from 'react'
+import ComingSoon from '../../components/ComingSoon'
 
 const Social = () => {
   return (
-    <div>Social</div>
+    <div className='w-full h-full flex items-center justify-center'>
+      <ComingSoon/>
+    </div>
   )
 }
 

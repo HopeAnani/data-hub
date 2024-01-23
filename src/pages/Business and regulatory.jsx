@@ -79,26 +79,26 @@ const Business = () => {
                           <div class="flex flex-col max-w-sm px-6 py-4 mx-auto bg-white rounded-lg shadow-md">
                               <ul class="-mx-4">
                                   <li class="flex items-center">
-                                    <img src="https://www.flagcolorcodes.com/filter?f=ethiopia&e=waves  "
-                                         alt="avatar" class="object-cover w-10 h-10 mx-4 rounded-full"/>
+                                    {/* <img src="https://www.flagcolorcodes.com/filter?f=ethiopia&e=waves  "
+                                         alt="avatar" class="object-cover w-10 h-10 mx-4 rounded-full"/> */}
                                       <p><Link to="/" class="mx-1 font-bold text-[#173e26] hover:underline">Proclamation</Link>
                                       <span class=" text-sm font-light text-gray-700"> 23 Files</span></p>
                                   </li>
                                   <li class="flex items-center mt-6">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Flag_of_the_Afar_Region.svg/2560px-Flag_of_the_Afar_Region.svg.png"
-                                         alt="avatar" class="object-cover w-10 h-10 mx-4 rounded-full"/>
+                                    {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Flag_of_the_Afar_Region.svg/2560px-Flag_of_the_Afar_Region.svg.png"
+                                         alt="avatar" class="object-cover w-10 h-10 mx-4 rounded-full"/> */}
                                       <p><Link to="/" class="mx-1 font-bold text-[#173e26] hover:underline">Regulation</Link><span
                                               class="text-sm font-light text-gray-700">82 Files</span></p>
                                   </li>
                                   <li class="flex items-center mt-6">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Flag_of_the_Tigray_Region.svg/1280px-Flag_of_the_Tigray_Region.svg.png"
-                                         alt="avatar" class="object-cover w-10 h-10 mx-4 rounded-full"/>
+                                    {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Flag_of_the_Tigray_Region.svg/1280px-Flag_of_the_Tigray_Region.svg.png"
+                                         alt="avatar" class="object-cover w-10 h-10 mx-4 rounded-full"/> */}
                                       <p><Link to="/" class="mx-1 font-bold text-[#173e26] hover:underline">Directives</Link><span
                                               class="text-sm font-light text-gray-700">52 Files</span></p>
                                   </li>
                                   <li class="flex items-center mt-6">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flag_of_the_Oromia_Region.svg/2560px-Flag_of_the_Oromia_Region.svg.png"
-                                         alt="avatar" class="object-cover w-10 h-10 mx-4 rounded-full"/>
+                                    {/* <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flag_of_the_Oromia_Region.svg/2560px-Flag_of_the_Oromia_Region.svg.png"
+                                         alt="avatar" class="object-cover w-10 h-10 mx-4 rounded-full"/> */}
                                       <p><Link to="/" class="mx-1 font-bold text-[#173e26] hover:underline">Manual</Link><span
                                               class="text-sm font-light text-gray-700">12 Files</span></p>
                                   </li>

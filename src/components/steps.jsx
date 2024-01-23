@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import '../styles/steps.css';
 import one from '../images/one.png'
+import two from '../images/two.png'
+import three from '../images/three.png'
 
 const Steps = () => {
   useEffect(() => {
@@ -47,10 +49,10 @@ const Steps = () => {
             <img src={one} alt="" />
           </div>
           <div className="imgBx" style={{ '--i': 2 }} data-id="content2">
-            <img src="https://images.unsplash.com/photo-1557576146-047908becbb4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TnVtYmVyJTIwMXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
+            <img src={two} alt="" />
           </div>
           <div className="imgBx" style={{ '--i': 3 }} data-id="content3">
-            <img src="https://images.unsplash.com/photo-1557576146-047908becbb4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TnVtYmVyJTIwMXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
+            <img src={three} alt="" />
           </div>
           {/* <div className="imgBx" style={{ '--i': 4 }} data-id="content4">
             <img src="https://images.unsplash.com/photo-1557576146-047908becbb4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TnVtYmVyJTIwMXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
@@ -76,7 +78,7 @@ const Steps = () => {
           <div className="contenttBx" id="content2">
             <div className="card">
               <div className="imgBx">
-                <img src="https://images.unsplash.com/photo-1621440318431-b720cd358375?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                <img src={two} alt="" />
               </div>
               <div className="textBx">
                 <h2>Implementation</h2>
@@ -87,7 +89,7 @@ const Steps = () => {
           <div className="contenttBx" id="content3">
             <div className="card">
               <div className="imgBx">
-                <img src="https://images.unsplash.com/photo-1621440318357-3e3c94221a1c?q=80&w=2067&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                <img src={three} alt="" />
               </div>
               <div className="textBx">
                 <h2>Operation</h2>

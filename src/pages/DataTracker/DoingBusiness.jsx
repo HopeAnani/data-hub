@@ -1,8 +1,11 @@
 import React from 'react'
+import ComingSoon from '../../components/ComingSoon'
 
 const DoingBusiness = () => {
   return (
-    <div>DoingBusiness</div>
+    <div className='w-full h-full flex items-center justify-center'>
+      <ComingSoon/>
+    </div>
   )
 }
 

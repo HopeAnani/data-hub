@@ -19,6 +19,7 @@ import Social from "./DataTracker/Social.jsx";
 import Trade from "./DataTracker/Trade.jsx";
 import Investment from "./DataTracker/Investment.jsx";
 import RegulatoryandStrategy from "./RegulatoryandStrategy.jsx";
+import ACEServices from "./ACEServices.jsx";
 const Explore = () => {
   return (
     <>
@@ -42,6 +43,7 @@ const Explore = () => {
             <Route path="/Data-Repository/Investment" element={<Investment/>} />
             <Route path="/Data-Repository/Infrastructure" element={<Infrastructure/>} />
             <Route path="/Data-Repository/Doing-Business" element={<DoingBusiness/>} />
+            <Route path="/ACE-Services" element={<ACEServices/>} />
           </Routes>
           {/* <FlipBook/> */}
         </div>

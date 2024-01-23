@@ -1,7 +1,7 @@
 import React from 'react'
-import ComingSoon from '../../components/ComingSoon'
+import ComingSoon from '../components/ComingSoon'
 
-const Economy = () => {
+const ACEServices = () => {
   return (
     <div className='w-full h-full flex items-center justify-center'>
       <ComingSoon/>
@@ -9,4 +9,4 @@ const Economy = () => {
   )
 }
 
-export default Economy
+export default ACEServices
