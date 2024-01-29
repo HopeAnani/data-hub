@@ -82,7 +82,7 @@ const Navbar = () => {
           className={
             !nav
               ? "fixed top-[-100%]"
-              : "fixed left-0 top-28 w-[100%] bg-gradient-to-b from-[#173e26] h-full ease-in-out duration-500 nav"
+              : "fixed left-0 top-28 w-[100%] bg-gradient-to-b from-[#173e26] h-full ease-in-out duration-500 nav md:hidden flex"
           }
         >
           {/* <h1 className='w-[30%] text-3xl font-bold m-4'>ACE IDH</h1> */}
