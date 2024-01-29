@@ -1,7 +1,7 @@
 .box {
-    position: relative;
-    width: 600px;
-    height: 600px;
+    position: relative; 
+    width: 450px;
+    height: 450px;
     border: 2px solid #173e26;
     border-radius: 50%;
 }
@@ -19,15 +19,15 @@
 
 .box .icon .imgBx {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     transition: 0.5s;
     border: 1px solid #173e26;
     box-shadow: 0 0 0 4px #f2f5f7,
     0 0 0 6px #173e26;
     transform: rotate(calc(360deg/3 * var(--i)));
-    transform-origin: 340px;
+    transform-origin: 255px;
     z-index: 1;
     overflow: hidden;
 }
@@ -65,7 +65,7 @@
 .contentt::before {
     content: '';
     position: absolute;
-    inset: 50px;
+    inset: 38px;
     border: 4px solid transparent;
     border-left: 4px solid greenyellow;
     border-right: 4px solid #173e26;
@@ -87,7 +87,7 @@
 .contentt::after {
     content: '';
     position: absolute;
-    inset: 70px;
+    inset: 53px;
     border: 4px solid transparent;
     border-left: 4px solid #173e26;
     border-right: 4px solid #fea00c;
@@ -154,7 +154,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 300px;
+    width: 225px;
 }
 
 .contenttBx .card .textBx h2 {
@@ -169,7 +169,7 @@
 
 .contenttBx .card .textBx .para {
     position: relative;
-    font-size: 0.75em;
+    font-size: 0.6em;
     color: #173e26;
     font-weight: 500;
     letter-spacing: 0.1em;

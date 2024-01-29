@@ -12,24 +12,24 @@ const Policies = () => {
     {
       title: 'Economy',
       pdfs: [
-        { title: 'Sample PDF document 1', downloadLink: sample1 },
-        { title: 'Sample PDF document 2', downloadLink: sample2 },
+        { title: 'Sample PDF document 1', downloadLink: sample1, isFree:true },
+        { title: 'Sample PDF document 2', downloadLink: sample2, isFree:false },
       ],
     },
     {
       title: 'Trade',
       pdfs: [
-        { title: '201310 Ethiopias National Agoa Response Strategy Draft', downloadLink: sample3 },
-        { title: 'Sample PDF document 4', downloadLink: sample4 },
-        { title: 'Sample PDF document 5', downloadLink: sample5 },
+        { title: '201310 Ethiopias National Agoa Response Strategy Draft', downloadLink: sample3, isFree:true },
+        { title: 'Sample PDF document 4', downloadLink: sample4, isFree:true },
+        { title: 'Sample PDF document 5', downloadLink: sample5, isFree:false },
       ],
     },
     {
       title: 'Social',
       pdfs: [
-        { title: 'Sample PDF document 3', downloadLink: sample3 },
-        { title: 'Sample PDF document 4', downloadLink: sample4 },
-        { title: 'Sample PDF document 5', downloadLink: sample5 },
+        { title: 'Sample PDF document 3', downloadLink: sample3, isFree:true },
+        { title: 'Sample PDF document 4', downloadLink: sample4, isFree:true },
+        { title: 'Sample PDF document 5', downloadLink: sample5, isFree:true },
       ],
     },
     {

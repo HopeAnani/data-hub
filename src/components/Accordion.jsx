@@ -21,7 +21,7 @@ const Accordion = ({ title, pdfs }) => {
               {/* Content inside the accordion */}
               <div className="mb-4">
                 {pdfs.map((pdf, index) => (
-                  <Pdf key={index} title={pdf.title} downloadLink={pdf.downloadLink} />
+                  <Pdf key={index} title={pdf.title} downloadLink={pdf.downloadLink} isFree={pdf.isFree} />
                 ))}
               </div>
               {/* Add more content as needed */}

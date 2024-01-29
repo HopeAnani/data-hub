@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, useDisclosure} from "@nextui-org/react";
 
-const Pdf = ({ title, downloadLink }) => {
+const Pdf = ({ title, downloadLink, isFree }) => {
     const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = downloadLink;
-        link.download = `${title}.pdf`; // You can customize the downloaded file name
-        link.click();
+      const link = document.createElement('a');
+      link.href = downloadLink;
+      link.target = '_blank'; // Open in a new tab
+      link.click();
       };
-      const {isOpen, onOpen, onOpenChange} = useDisclosure();
+      const {isOpen, onOpen, onOpenChange} = useDisclosure(); 
 
      const sendEmail = () => {
         window.open("mailto:ananisamuelhope@gmail.com?subject=SendMail&body=Description");
@@ -27,7 +27,7 @@ const Pdf = ({ title, downloadLink }) => {
         <Button
           className="bg-[#173e26] text-white p-2 px-4 rounded hover:bg-[#112e1c]"
           // onClick={handleDownload}
-          onPress={onOpen}
+          onClick={isFree ? handleDownload : onOpen}
         >
           Download
         </Button>
@@ -36,10 +36,10 @@ const Pdf = ({ title, downloadLink }) => {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">Modal Title</ModalHeader>
+              <ModalHeader className="flex flex-col gap-1">Send Email</ModalHeader>
               <ModalBody>
                 <p> 
-                  If you want to access this pdf send as a request through our email.
+                  Interested? Please send us a request through our email info@aceadvisors.org.
                 </p>
               </ModalBody>
               <ModalFooter>
