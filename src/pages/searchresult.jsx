@@ -1,9 +1,29 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import {Pagination,Button} from "@nextui-org/react";
-
+import sample1 from '../images/Samplepdf.pdf';
+import sample2 from '../images/Samplepdf.pdf';
+import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure} from "@nextui-org/react";
 
 const Result= () => {
+  const pdfs = [ 
+        { downloadLink: sample1, isFree: true, title: "Capital Market" },
+        { downloadLink: sample2, isFree: false, title: "Economy" },
+  ];
+  
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleDownload = (downloadLink) => {
+    const link = document.createElement('a');
+    link.href = downloadLink;
+    link.target = '_blank'; // Open in a new tab
+    link.click();
+  };
+
+
+  const sendEmail = () => {
+    window.open("mailto:infoaceadvisors.org?subject=SendMail&body=Description");
+  };
+
   const [currentPage, setCurrentPage] = React.useState(1);
   return (
       <div class="overflow-x-hidden bg-gray-100">
@@ -19,19 +39,20 @@ const Result= () => {
                               </select>
                           </div>
                       </div>
-                      <div class="mt-6">
+                      {pdfs.map((pdf,index) =>( 
+                      <div key={index} class="mt-6">
                           <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
                               <div class="flex items-center justify-between"><span class="font-light text-gray-600">Jun 1,
                                       2020</span>
-                                      <Link to="/" class="px-2 py-1 font-bold text-gray-100 bg-[#173e26] rounded hover:bg-[#24542f]">Economy</Link>
+                                      <Link to="" class="px-2 py-1 font-bold text-gray-100 bg-[#173e26] rounded hover:bg-[#24542f]">Economy</Link>
                               </div>
-                              <div class="mt-2"><Link to="/" class="text-2xl font-bold text-[#173e26] hover:underline">Capital Market in Ethiopia</Link>
+                              <div class="mt-2"><Link to="" class="text-2xl font-bold text-[#173e26] hover:underline">{pdf.title}</Link>
                                   <p class="mt-2 text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                                       Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim
                                       reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!</p>
                               </div>
                               <div class="flex items-center justify-between mt-4">
-                                <Link to="/" class="text-[#24542f] hover:underline">Read more</Link>
+                                <Link class="text-[#24542f] hover:underline" onClick={() => pdf.isFree ? handleDownload(pdf.downloadLink) : onOpen()}>Read more</Link>
                                   <div>
                                     <a href="#" class="flex items-center">
                                       <img src="https://www.flagcolorcodes.com/filter?f=ethiopia&e=waves"
@@ -42,124 +63,23 @@ const Result= () => {
                               </div>
                           </div>
                       </div>
-                      <div class="mt-6">
-                          <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
-                              <div class="flex items-center justify-between"><span class="font-light text-gray-600">Jun 1,
-                                      2020</span>
-                                      <Link to="/" class="px-2 py-1 font-bold text-gray-100 bg-[#173e26] rounded hover:bg-[#24542f]">Investment</Link>
-                              </div>
-                              <div class="mt-2"><Link to="/" class="text-2xl font-bold text-[#173e26] hover:underline">Capital Market in Ethiopia</Link>
-                                  <p class="mt-2 text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                      Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim
-                                      reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!</p>
-                              </div>
-                              <div class="flex items-center justify-between mt-4">
-                                <Link to="/" class="text-[#24542f] hover:underline">Read more</Link>
-                                  <div>
-                                    <a href="#" class="flex items-center">
-                                      <img src="https://www.flagcolorcodes.com/filter?f=ethiopia&e=waves"
-                                           alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"/>
-                                      <h1 class="font-bold text-[#173e26] hover:underline">Ethiopia</h1>
-                                    </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      {/* <h1 class="text-xl font-bold text-[#173e26] md:text-2xl mt-6">Topics Related:</h1> */}
-                      <div class="mt-6">
-                          <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
-                              <div class="flex items-center justify-between"><span class="font-light text-gray-600">Jun 1,
-                                      2020</span>
-                                      <Link to="/" class="px-2 py-1 font-bold text-gray-100 bg-[#173e26] rounded hover:bg-[#24542f]">Trade</Link>
-                              </div>
-                              <div class="mt-2"><Link to="/" class="text-2xl font-bold text-[#173e26] hover:underline">Trade in Addis Ababa</Link>
-                                  <p class="mt-2 text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                      Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim
-                                      reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!</p>
-                              </div>
-                              <div class="flex items-center justify-between mt-4">
-                                <Link to="/" class="text-[#24542f] hover:underline">Read more</Link>
-                                  <div>
-                                    <a href="#" class="flex items-center">
-                                      <img src="https://www.flagcolorcodes.com/filter?f=ethiopia&e=waves"
-                                           alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"/>
-                                      <h1 class="font-bold text-[#173e26] hover:underline">Ethiopia</h1>
-                                    </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="mt-6">
-                          <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
-                              <div class="flex items-center justify-between"><span class="font-light text-gray-600">Jun 1,
-                                      2020</span>
-                                      <Link to="/" class="px-2 py-1 font-bold text-gray-100 bg-[#173e26] rounded hover:bg-[#24542f]">Economy</Link>
-                              </div>
-                              <div class="mt-2"><Link to="/" class="text-2xl font-bold text-[#173e26] hover:underline">Capital Market in Ethiopia</Link>
-                                  <p class="mt-2 text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                      Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim
-                                      reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!</p>
-                              </div>
-                              <div class="flex items-center justify-between mt-4">
-                                <Link to="/" class="text-[#24542f] hover:underline">Read more</Link>
-                                  <div>
-                                    <a href="#" class="flex items-center">
-                                      <img src="https://www.flagcolorcodes.com/filter?f=ethiopia&e=waves"
-                                           alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"/>
-                                      <h1 class="font-bold text-[#173e26] hover:underline">Ethiopia</h1>
-                                    </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="mt-6">
-                          <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
-                              <div class="flex items-center justify-between"><span class="font-light text-gray-600">Jun 1,
-                                      2020</span>
-                                      <Link to="/" class="px-2 py-1 font-bold text-gray-100 bg-[#173e26] rounded hover:bg-[#24542f]">Economy</Link>
-                              </div>
-                              <div class="mt-2"><Link to="/" class="text-2xl font-bold text-[#173e26] hover:underline">Capital Market in Ethiopia</Link>
-                                  <p class="mt-2 text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                      Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim
-                                      reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!</p>
-                              </div>
-                              <div class="flex items-center justify-between mt-4">
-                                <Link to="/" class="text-[#24542f] hover:underline">Read more</Link>
-                                  <div>
-                                    <a href="#" class="flex items-center">
-                                      <img src="https://www.flagcolorcodes.com/filter?f=ethiopia&e=waves"
-                                           alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"/>
-                                      <h1 class="font-bold text-[#173e26] hover:underline">Ethiopia</h1>
-                                    </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="mt-6">
-                          <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
-                              <div class="flex items-center justify-between"><span class="font-light text-gray-600">Jun 1,
-                                      2020</span>
-                                      <Link to="/" class="px-2 py-1 font-bold text-gray-100 bg-[#173e26] rounded hover:bg-[#24542f]">Economy</Link>
-                              </div>
-                              <div class="mt-2"><Link to="/" class="text-2xl font-bold text-[#173e26] hover:underline">Capital Market in Ethiopia</Link>
-                                  <p class="mt-2 text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                      Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim
-                                      reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!</p>
-                              </div>
-                              <div class="flex items-center justify-between mt-4">
-                                <Link to="/" class="text-[#24542f] hover:underline">Read more</Link>
-                                  <div>
-                                    <a href="#" class="flex items-center">
-                                      <img src="https://www.flagcolorcodes.com/filter?f=ethiopia&e=waves"
-                                           alt="avatar" class="hidden object-cover w-10 h-10 mx-4 rounded-full sm:block"/>
-                                      <h1 class="font-bold text-[#173e26] hover:underline">Ethiopia</h1>
-                                    </a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+                      ))}
+
+                      <Modal isOpen={isOpen} onClose={onClose}>
+                        <ModalContent>
+                          <ModalHeader>Send Email</ModalHeader>
+                          <ModalBody>
+                            Interested? Please send us a request through our email info@aceadvisors.org.
+                          </ModalBody>
+                          <ModalFooter>
+                            <Button color="danger" variant="light" onPress={onClose}>Close</Button>
+                            <Button color='success' variant='light' onClick={sendEmail}>Send Email</Button>
+                          </ModalFooter> 
+                        </ModalContent>
+                      </Modal>
                       
-                      <div class="mt-8">
+                      
+                      {/* <div class="mt-8">
                           <div class="flex">
                               <Link to="/" class="px-3 py-2 mx-1 font-medium text-gray-500 bg-white rounded-md cursor-not-allowed">
                                   previous
@@ -181,38 +101,38 @@ const Result= () => {
                                   Next
                               </Link>
                           </div>
-                      </div>
+                      </div> */}
                       <div className="flex flex-col gap-5">
-      <p className="text-small text-default-500">Selected Page: {currentPage}</p>
-      <div className='flex gap-2'>
-      <Button
-          size="sm"
-          variant="flat"
-          color="secondary"
-          onPress={() => setCurrentPage((prev) => (prev > 1 ? prev - 1 : prev))}
-          class="px-3 py-2 mx-1 font-medium text-[#173e26] bg-white rounded-md hover:bg-[#24542f] hover:text-white"
-        >
-          Previous
-        </Button>
-      <Pagination
-        total={10}
-        page={currentPage}
-        color='success'
-        onChange={setCurrentPage}
-        className=' bg-transparent'
-      />
-        <Button
-          size="sm"
-          variant="flat"
-          color="secondary"
-          onPress={() => setCurrentPage((prev) => (prev < 10 ? prev + 1 : prev))}
-          class="px-3 py-2 mx-1 font-medium text-[#173e26] bg-white rounded-md hover:bg-[#24542f] hover:text-white"
-        >
-          Next
-        </Button>
-        </div>
-    </div>
-    </div>
+                        <p className="text-small text-default-500">Selected Page: {currentPage}</p>
+                        <div className='flex gap-2'>
+                        <Button
+                            size="sm"
+                            variant="flat"
+                            color="secondary"
+                            onPress={() => setCurrentPage((prev) => (prev > 1 ? prev - 1 : prev))}
+                            class="px-3 py-2 mx-1 font-medium text-[#173e26] bg-white rounded-md hover:bg-[#24542f] hover:text-white"
+                          >
+                            Previous
+                          </Button>
+                        <Pagination
+                          total={10}
+                          page={currentPage}
+                          color='success'
+                          onChange={setCurrentPage}
+                          className=' bg-transparent'
+                        />
+                          <Button
+                            size="sm"
+                            variant="flat"
+                            color="secondary"
+                            onPress={() => setCurrentPage((prev) => (prev < 10 ? prev + 1 : prev))}
+                            class="px-3 py-2 mx-1 font-medium text-[#173e26] bg-white rounded-md hover:bg-[#24542f] hover:text-white"
+                          >
+                            Next
+                          </Button>
+                            </div>
+                        </div>
+                      </div>
                   <div class="hidden w-4/12 -mx-8 lg:block">
                       <div class="px-8">
                           <h1 class="mb-4 text-xl font-bold text-[#173e26]">Region</h1>

@@ -46,7 +46,7 @@ const Pdf = ({ title, downloadLink, isFree }) => {
                 <Button color="danger" variant="light" onPress={onClose}>
                   Close
                 </Button>
-                <Button color="primary" onClick={sendEmail}>
+                <Button color="success" variant='light' onClick={sendEmail}>
                   Send Email
                 </Button>
               </ModalFooter>
