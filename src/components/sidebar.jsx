@@ -34,7 +34,7 @@ const Sidebar = () => {
     </label> */}
 
     <nav className="sidebar overflow-y-scroll" id="sb">
-      <div className="sideText">Side Menu</div> 
+      <div className="sideText">Content</div> 
       <ul className="list-none">
         <li>
           <Link  onClick={handleLinkClick} to='/explore/Regulatory-and-Strategy'>
