@@ -20,6 +20,7 @@ import Trade from "./DataTracker/Trade.jsx";
 import Investment from "./DataTracker/Investment.jsx";
 import RegulatoryandStrategy from "./RegulatoryandStrategy.jsx";
 import ACEServices from "./ACEServices.jsx";
+import Studies from "./otherStudies.jsx";
 const Explore = () => {
   return (
     <>
@@ -31,6 +32,7 @@ const Explore = () => {
             <Route path="/Regulatory-and-Strategy" exact element={<RegulatoryandStrategy/>} />
             <Route path="/National-strategies-and-policies" element={<Policies />} />
             <Route path="/Strategy-repository" element={<Result/>}/>
+            <Route path="/Other-studies" element={<Studies/>}/>
             <Route path="/Important-links" element={<Links/>}/>
             <Route path="/Investment-Lifecycle" element={<Invlifecycle/>} />
             <Route path="/Buisness-and-regulatory-framework" element={<Business/>} />

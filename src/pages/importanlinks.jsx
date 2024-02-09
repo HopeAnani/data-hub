@@ -22,7 +22,7 @@ const Links = () => {
         Important Links
       </h1>
     </div>
-    <Table className='h-[100vh] max-lg:ml-0 ml-10'
+    <Table className='h-[100vh] max-lg:ml-0 ml-10 w-[95%]'
       isStriped aria-label="Example static collection table"
       bottomContent={
         <div className="flex w-full justify-center">
@@ -30,7 +30,8 @@ const Links = () => {
             isCompact
             showControls
             showShadow
-            color="primary"
+            color="success"
+            variant='light'
             page={page}
             total={pages}
             onChange={(page) => setPage(page)}
@@ -47,7 +48,7 @@ const Links = () => {
       <TableHeader>
         <TableColumn key="name" className=' font-extrabold text-[#173e26] text-lg'>Organization Name</TableColumn>
         <TableColumn key="description" className=' font-extrabold text-[#173e26] text-lg'>Description</TableColumn>
-        <TableColumn key="link" className=' font-extrabold text-[#173e26] text-lg'>Link</TableColumn>
+        <TableColumn key="link" className=' font-extrabold text-[#173e26] text-lg w-44'>Link</TableColumn>
       </TableHeader>
       <TableBody items={items}>
         {(item) => (

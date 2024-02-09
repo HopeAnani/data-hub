@@ -48,6 +48,9 @@ const Sidebar = () => {
               <Link to="/explore/Buisness-and-regulatory-framework">Business Regulatory Framework</Link>
             </li>
             <li>
+              <Link to="/explore/Other-studies">Other Studies</Link>
+            </li>
+            <li>
               <Link to="/explore/Important-links">Important Links</Link>
             </li>
           </ul>
