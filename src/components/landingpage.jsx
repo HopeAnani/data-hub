@@ -11,12 +11,12 @@ const LandingPage = () => {
       description: 'The ADH functions as a one-stop shop that caters to anyone in the investment ecosystem (both foreign and domestic) looking to invest in Ethiopia. ACE Advisors collects and provides an extensive range of resources such as documents, data sheets, hyperlinks, and service offerings pertaining to investment in Ethiopia.',
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1462899006636-339e08d1844e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGludmVzdG1lbnR8ZW58MHx8MHx8fDA%3D',
+      imageUrl: 'https://images.unsplash.com/photo-1575959508154-1fab18d1338b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'ADH',
       description: 'The ADH functions as a one-stop shop that caters to anyone in the investment ecosystem (both foreign and domestic) looking to invest in Ethiopia. ACE Advisors collects and provides an extensive range of resources such as documents, data sheets, hyperlinks, and service offerings pertaining to investment in Ethiopia.',
     },
     {
-      imageUrl: 'https://images.unsplash.com/photo-1462899006636-339e08d1844e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGludmVzdG1lbnR8ZW58MHx8MHx8fDA%3D',
+      imageUrl: 'https://images.unsplash.com/photo-1633158829875-e5316a358c6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'ADH',
       description: 'The ADH functions as a one-stop shop that caters to anyone in the investment ecosystem (both foreign and domestic) looking to invest in Ethiopia. ACE Advisors collects and provides an extensive range of resources such as documents, data sheets, hyperlinks, and service offerings pertaining to investment in Ethiopia.',
     },
