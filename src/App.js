@@ -16,14 +16,16 @@ const App = () => {
 
   return (
     <NextUIProvider>
-    <div className="block">
+    <div className="flex flex-col min-h-screen">
       <Navbar />
+      <div className="flex-grow">
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/explore/*" element={<Explore />} />
         <Route path="/searchresult" element={<Result />} />
         
       </Routes>
+      </div>
       <Footer />
     </div>
     </NextUIProvider>

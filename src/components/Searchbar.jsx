@@ -175,7 +175,7 @@ const SearchBar = () => {
         </div>
       )}
        {/* Display Filtered Items */}
-       <div className="mt-8 flex justify-center text-center">
+       <div className="mt-8 justify-center text-center hidden">
         <ul>
           {filteredItems.map((item) => (
             <li key={item.id}>{`${item.name} - ${item.region} - ${item.dataType} - ${item.year}`}</li>

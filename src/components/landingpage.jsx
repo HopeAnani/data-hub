@@ -40,7 +40,11 @@ const LandingPage = () => {
   }, [slides.length]);
 
   return (
+    
     <div className="img-slide w-full relative h-[500px] overflow-hidden flex bg-scroll">
+      <div className="search-bar-container absolute z-20 w-full">
+        <SearchBar />
+      </div>
       {slides.map((slide, index) => (
         <div
         key={index}
@@ -48,8 +52,8 @@ const LandingPage = () => {
         >
           <img className="z-10 w-full bg-cover" src={slide.imageUrl} alt="" />
           <div className="info absolute top-0 pt-4 pr-8 pb-4 pl-8 object-center justify-center text-justify">
-            <SearchBar/>
-            <h2 className="text-[45px] uppercase font-extrabold tracking-wider  text-white">{slide.title}</h2>
+            {/* <SearchBar/> */}
+            <h2 className="text-[45px] mt-40 uppercase font-extrabold tracking-wider  text-white">{slide.title}</h2>
             <p className='text-white'>{slide.description}</p>
             <Link to='/explore'><button className="bg-[#173e26] text-white p-2 rounded w-36 hover:bg-[#112e1c] btnn">Know more</button></Link>
           </div>

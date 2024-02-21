@@ -4,35 +4,38 @@ import { AiFillCaretDown } from 'react-icons/ai';
 
 const Sidebar = () => {
   const handleLinkClick = (event) => {
-    const clickedLink = event.currentTarget;
-    const clickedItem = clickedLink.parentNode;
+    // Get all menu items
+    const menuItems = document.querySelectorAll('.sidebar ul > li');
+  
+    // Close all open menus
+    menuItems.forEach(item => {
+      if (item !== event.currentTarget.parentNode) {
+        item.classList.remove('active');
+        const dropdown = item.querySelector('ul');
+        if (dropdown) {
+          dropdown.classList.remove('active');
+        }
+      }
+    });
+  
+    // Handle the clicked menu item
+    const clickedItem = event.currentTarget.parentNode;
     const dropdownMenu = clickedItem.querySelector('ul');
-
+    
     // Toggle active class on clicked item
     clickedItem.classList.toggle('active');
-
+  
     // Toggle active class on dropdown menu
     if (dropdownMenu) {
       dropdownMenu.classList.toggle('active');
     }
   };
 
+  
+  
+
   return (
     <div className='flex'>
-       {/* <div>
-        <AiFillCaretLeft/>
-      </div> */}
-      {/* <input type="checkbox" id="sidecheck"></input>
-      <label for="sidecheck">
-			  <span class="spann" id="bars" onclick="contentMove('r')"><AiOutlineMenuFold size={25}/></span>
-		  </label> */}
-
-    {/* <input type="checkbox" id="drawer-toggle" class="relative sr-only peer" checked/>
-    <label for="drawer-toggle" class="absolute left-0 inline-block p-4 transition-all duration-500 bg-indigo-500 rounded-lg peer-checked:rotate-180 peer-checked:left-64">
-        <div class="w-6 h-1 mb-3 -rotate-45 bg-white rounded-lg"></div>
-        <div class="w-6 h-1 rotate-45 bg-white rounded-lg"></div>
-    </label> */}
-
     <nav className="sidebar overflow-y-scroll" id="sb">
       <div className="sideText">Content</div> 
       <ul className="list-none">

@@ -82,7 +82,7 @@ const Navbar = () => {
           className={
             !nav
               ? "fixed top-[-100%]"
-              : "fixed left-0 top-28 w-[100%] bg-gradient-to-b from-[#173e26] h-full ease-in-out duration-500 nav md:hidden flex"
+              : "fixed left-0 top-28 w-[100%] bg-gradient-to-b from-[#173e26] to-[rgba(23,62,38,0.5)] max-h-[78vh] overflow-y-auto ease-in-out duration-500 nav md:hidden flex"
           }
         >
           {/* <h1 className='w-[30%] text-3xl font-bold m-4'>ACE IDH</h1> */}
@@ -90,19 +90,19 @@ const Navbar = () => {
               onClick={(event) => {
               const clickedElement = event.target;
               const textContent = clickedElement.textContent.trim();
-              if (textContent !== "Regulatory & Strategy") {
+              if (textContent !== "Regulatory & Strategy" && textContent !== "Data Repository") {
                 closeNav();
               }
             }}>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4 border-b border-white">
               {/* <a href="/">Home</a> */}
               <Link to="/">Home</Link>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4 border-b border-white">
               {/* <a href="/">Explore</a> */}
               <Link to="/explore">Explore</Link>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4 border-b border-white">
               {/* <a href="/">Explore</a> */}
               <Link onClick={handleLinkClick} >Regulatory & Strategy <AiFillCaretDown className="inline caret" /></Link>
               <ul>
@@ -120,11 +120,35 @@ const Navbar = () => {
                 </li>
               </ul>
             </li>
-            <li className="p-4 border-b border-gray-600">
+            <li className="p-4 border-b border-white">
+              {/* <a href="/">Explore</a> */}
+              <Link onClick={handleLinkClick}>Data Repository<AiFillCaretDown className="inline caret" /></Link>
+              <ul>
+                <li>
+                  <Link to="/explore/data-repository/Doing-Business">Doing Business</Link>
+                </li>
+                <li>
+                  <Link to="/explore/data-repository/Economy">Economy</Link>
+                </li>
+                <li>
+                  <Link to="/explore/data-repository/Infrastructure">Infrastructure</Link>
+                </li>
+                <li>
+                  <Link to="/explore/data-repository/Investment">Investment</Link>
+                </li>
+                <li>
+                  <Link to="/explore/data-repository/Social">Social</Link>
+                </li>
+                <li>
+                  <Link to="/explore/data-repository/Trade">Trade</Link>
+                </li>
+              </ul>
+            </li>
+            <li className="p-4 border-b border-white">
               {/* <a href="/">About us</a> */}
               <Link to="https://aceadvisors.org/about-us/">About us</Link>
             </li>
-            <li className="p-4 border-b border-gray-600 flex">
+            <li className="p-4 border-b border-white flex">
               <a href="mailto:ananisamuelhope@gmail.com" className="flex">
                 <AiFillMail size={25} className=" mr-4"/>
                  Email

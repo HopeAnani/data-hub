@@ -150,3 +150,219 @@ export const users = [
     link: "Active",
   },
 ];
+
+
+export const Agri = [
+  {
+    year: 1981,
+    value: 54.7391364,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1982,
+    value: 53.2565097,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1983,
+    value: 54.3770918, 
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1984,
+    value: 47.8982584,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1985,
+    value: 52.5784481,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1986,
+    value: 50.9863664,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1987,
+    value: 49.1247697,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1988,
+    value: 48.5930539,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1989,
+    value: 48.3909143,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1990,
+    value: 49.491248,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1991,
+    value: 58.6660623,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1992,
+    value: 63.8313363,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1993,
+    value: 59.9452982,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1994,
+    value: 52.6994512,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1995,
+    value: 51.9247039,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1996,
+    value: 51.1653684,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1997,
+    value: 54.0289893,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1998,
+    value: 49.0619079,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 1999,
+    value: 45.4854632,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2000,
+    value: 44.6660179,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2001,
+    value: 42.3405711,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2002,
+    value: 38.6923717,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2003,
+    value: 37.2850554,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2004,
+    value: 38.6797549,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2005,
+    value: 41.1744986,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2006,
+    value: 42.5241701,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2007,
+    value: 42.2650122,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2008,
+    value: 45.1845584,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2009,
+    value: 45.8826943, 
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2010,
+    value: 41.4468201,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2011,
+    value: 41.2499639,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2012,
+    value: 44.3309428,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2013,
+    value: 41.2395055,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2014,
+    value: 38.5204497,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2015,
+    value: 36.0569754,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2016,
+    value: 34.6988796,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2017,
+    value: 33.7792807,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2018,
+    value: 31.2188008, 
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2019,
+    value: 33.6333291,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2020,
+    value: 35.5582693,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2021,
+    value: 37.5791157,
+    realtime: "7.32 Billion",
+  },
+  {
+    year: 2022,
+    value: 37.6390311,
+    realtime: "7.32 Billion",
+  },
+];
+
+																																									

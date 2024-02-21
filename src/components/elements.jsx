@@ -9,7 +9,7 @@ const Elements = () => {
         <img
           className="w-full h-48 object-cover object-center"
           src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-          alt='Investment'
+          alt='Proclamation'
         />
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Proclamation</h2>
@@ -29,7 +29,7 @@ const Elements = () => {
         <img
           className="w-full h-48 object-cover object-center"
           src="https://images.unsplash.com/photo-1633158829875-e5316a358c6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-          alt='Economy'
+          alt='Regulation'
         />
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Regulation</h2>
@@ -49,7 +49,7 @@ const Elements = () => {
         <img
           className="w-full h-48 object-cover object-center"
           src="https://images.unsplash.com/photo-1572276037952-478cead56982?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-          alt='Economy'
+          alt='Directives'
         />
         <div className="p-6 justify-center items-center">
           <h2 className="text-xl font-semibold mb-2 text-center">Directives</h2>
