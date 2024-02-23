@@ -4,6 +4,8 @@ import LandingPage from '../components/landingpage';
 import Lifecycle from '../components/lifecycle';
 import Elements from '../components/elements';
 import { Link } from 'react-router-dom';
+import pic from '../images/pic.png'
+import pic2 from '../images/Lifecycle.webp'
 
 const Home = () => {  
   return (
@@ -34,7 +36,7 @@ const Home = () => {
       <div className="w-full md:w-[350px] mx-2 my-4 bg-white rounded-md overflow-hidden shadow-md">
         <img
           className="w-full h-48 object-cover object-center"
-          src="https://images.unsplash.com/photo-1633158829875-e5316a358c6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          src={pic2}
           alt='Investment Lifecycle'
         />
         <div className="p-6">
@@ -54,7 +56,8 @@ const Home = () => {
       <div className="w-full md:w-[350px] mx-2 my-4 bg-white rounded-md overflow-hidden shadow-md">
         <img
           className="w-full h-48 object-cover object-center"
-          src="https://images.unsplash.com/photo-1572276037952-478cead56982?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          // src="https://images.unsplash.com/photo-1572276037952-478cead56982?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          src={pic}
           alt='Data Repository'
         />
         <div className="p-6">

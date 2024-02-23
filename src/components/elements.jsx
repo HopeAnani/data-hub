@@ -8,7 +8,7 @@ const Elements = () => {
       <div className="w-full md:w-[350px] mx-2 my-4 bg-white rounded-md overflow-hidden shadow-md">
         <img
           className="w-full h-48 object-cover object-center"
-          src="https://images.unsplash.com/photo-1604594849809-dfedbc827105?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          src="https://img.freepik.com/free-photo/judges-gavel-book-wooden-table-law-justice-concept-background_1150-9095.jpg?t=st=1708679764~exp=1708683364~hmac=bdde1a2559704483086e92c6f0251435876caeb0fb964a2894201e1556bbe6cc&w=996" 
           alt='Proclamation'
         />
         <div className="p-6">
@@ -28,7 +28,7 @@ const Elements = () => {
       <div className="w-full md:w-[350px] mx-2 my-4 bg-white rounded-md overflow-hidden shadow-md">
         <img
           className="w-full h-48 object-cover object-center"
-          src="https://images.unsplash.com/photo-1633158829875-e5316a358c6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          src="https://img.freepik.com/free-photo/diverse-business-partners-reading-contract-together_74855-2736.jpg?t=st=1708680599~exp=1708684199~hmac=b61379820e0444b725178cfa8b101e455d48e1b0c1470cd85bedd50b16384f9f&w=996" 
           alt='Regulation'
         />
         <div className="p-6">
@@ -48,7 +48,7 @@ const Elements = () => {
       <div className="w-full md:w-[350px] mx-2 my-4 bg-white rounded-md overflow-hidden shadow-md ">
         <img
           className="w-full h-48 object-cover object-center"
-          src="https://images.unsplash.com/photo-1572276037952-478cead56982?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+          src="https://img.freepik.com/free-photo/young-adult-organizing-documents_23-2149396706.jpg?t=st=1708680239~exp=1708683839~hmac=5095cf0cc5902ad5366d4d85b1a2c5e14ab9919105f033905fb4f5cb8c3dc44d&w=996" 
           alt='Directives'
         />
         <div className="p-6 justify-center items-center">

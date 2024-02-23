@@ -3,14 +3,18 @@ import bank from '../images/bank.png'
 import hand from '../images/handshake.png'
 import plant from '../images/plant.png'
 import arrow from '../images/Asset 4.png'
+import { Carousel } from '@material-tailwind/react';
+
 const ServiceCard = ({ title, description, image }) => {
   // Splitting the description into paragraphs
   const paragraphs = description.split('\n');
 
   return (
-    <div className="w-full  py-6 mx-auto overflow-hidden shadow-md rounded-lg bg-white flex flex-wrap">
-      <div className='md:w-1/3 px-10 object-cover'><img src={image} alt={title} className="w-full md:w-auto"/></div>
-      <div className="md:w-2/3 md:px-10">
+    <div className="w-full py-6 mx-auto overflow-hidden shadow-md rounded-lg bg-white md:flex">
+      <div className="flex items-center justify-center md:w-1/3 px-10">
+        <img src={image} alt={title} className="w-full md:w-auto"/>
+      </div>
+      <div className="md:w-2/3 md:px-10 flex flex-col justify-center">
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-2">{title}</div>
           {/* Rendering description paragraphs with vertical line */}
@@ -20,23 +24,16 @@ const ServiceCard = ({ title, description, image }) => {
                 {/* Circle bullet */}
                 {index > 0 && (
                     <img
-                      src={arrow}// Replace with your arrow image path
+                      src={arrow}
                       alt="Arrow"
-                      className="absolute  top-2 left-[-10px] w-4 h-4 rotate-90 "
+                      className="absolute top-2 left-[-10px] w-4 h-4 rotate-90 "
                     />
                   )}
-
                 {paragraph}
               </p>
             ))}
           </div>
-
         </div>
-        {/* <div className="px-6 py-4">
-          <button className="bg-[#173e26] text-white p-2 rounded w-fit hover:bg-[#112e1c]">
-            Learn More
-          </button>
-        </div> */}
       </div>
     </div>
   );
@@ -62,12 +59,20 @@ const ACEServices = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center">
-      {services.map((service, index) => (
-        <div key={index} className="m-4 md:w-[80%]">
-          <ServiceCard {...service} />
-        </div>
-      ))}
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-3xl text-[#173e26] font-bold mb-4">ACE Services</h1>
+      <h2 className="text-xl text-[#173e26] font-semibold mb-8">Investment Facilitation and Support</h2>
+      <p className='text-center text-gray-700 text-lg mx-8 w-[80%] '>To support foreign and local investors and startups navigate the Ethiopian investment climate by providing quality, value-added, independent advice, tailored specifically to their individual needs.</p>
+      <div className=' border-b-large border-b-blue-300 mb-8 w-full'></div>
+      <div className="flex flex-wrap justify-center">
+        {services.map((service, index) => (
+          <div key={index} className="m-4 md:w-[80%] hover:shadow hover:scale-105">
+            <ServiceCard {...service} />
+          </div>
+        ))}
+      </div>
+      <h1 className="text-3xl text-[#173e26] font-bold mb-4">ACE Service Offerings</h1>
+      <Carousel/>
     </div>
   );
 };

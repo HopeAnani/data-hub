@@ -1,5 +1,5 @@
 import React from 'react'
-import pic from '../images/Business Plan-amico.png'
+import pic from '../images/Asset 1.svg'
 import pic2 from '../images/Statistics-bro.png'
 import pic3 from '../images/Visual data-amico.png'
 import pic4 from '../images/Analysis-amico.png'
