@@ -1,64 +1,40 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const servicesData = [
-  {
-    id: 1,
-    title: 'Service 1',
-    description: 'Description of service 1',
-  },
-  {
-    id: 2,
-    title: 'Service 2',
-    description: 'Description of service 2',
-  },
-  {
-    id: 3,
-    title: 'Service 3',
-    description: 'Description of service 3',
-  },
-];
-
-const Carousel = () => {
-  const [currentService, setCurrentService] = useState(0);
-
-  const nextService = () => {
-    setCurrentService((prev) => (prev === servicesData.length - 1 ? 0 : prev + 1));
-  };
-
-  const prevService = () => {
-    setCurrentService((prev) => (prev === 0 ? servicesData.length - 1 : prev - 1));
-  };
-
+const Service = () => {
   return (
-    <div className="max-w-md mx-auto">
-      <div className="relative">
-        <button
-          onClick={prevService}
-          className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-500 hover:bg-gray-600 text-white font-bold px-4 py-2 rounded focus:outline-none focus:ring focus:ring-gray-400"
-        >
-          Prev
-        </button>
-        <button
-          onClick={nextService}
-          className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-500 hover:bg-gray-600 text-white font-bold px-4 py-2 rounded focus:outline-none focus:ring focus:ring-gray-400"
-        >
-          Next
-        </button>
-        <div className="h-64 overflow-hidden">
-          <div className="w-full flex" style={{ transform: `translateX(-${currentService * 100}%)` }}>
-            {servicesData.map((service) => (
-              <div key={service.id} className="w-full px-4">
-                <div className="bg-white rounded-lg shadow-lg p-4">
-                  <h2 className="text-xl font-bold">{service.title}</h2>
-                  <p className="mt-2">{service.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-[80%]'>
+      <div className="relative bg-[#5a9772] cursor-pointer overflow-hidden group w-full md:w-[350px] mx-2 my-4 rounded-md shadow-md">
+        <di v className="bg-white transition-all duration-300 absolute top-0 left-0 w-full h-full group-hover:translate-x-full"></di>
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <h3 className="text-black text-center group-hover:text-white px-4 md:px-8 lg:px-12 py-2 md:py-4 lg:py-6">Investor Outreach and Promotion Strategies Design</h3>
+        </div>
+      </div>
+      <div className="relative bg-[#5a9772] cursor-pointer overflow-hidden group rounded-lg shadow-xl p-6 text-center hover:shadow hover:scale-105">
+        <div className="bg-white transition-all duration-300 absolute top-0 left-0 w-full h-full group-hover:translate-x-full rounded-lg shadow-xl p-6 text-center hover:shadow hover:scale-105"></div>
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <h3 className="text-black text-center group-hover:text-white px-4 md:px-8 lg:px-12 py-2 md:py-4 lg:py-6">Investor Outreach and Promotion Strategies Design</h3>
+        </div>
+      </div>
+      <div className="relative bg-[#5a9772] cursor-pointer overflow-hidden group rounded-lg shadow-xl p-6 text-center hover:shadow hover:scale-105">
+        <div className="bg-white transition-all duration-300 absolute top-0 left-0 w-full h-full group-hover:translate-x-full rounded-lg shadow-xl p-6 text-center hover:shadow hover:scale-105"></div>
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <h3 className="text-black text-center group-hover:text-white px-4 md:px-8 lg:px-12 py-2 md:py-4 lg:py-6">Investor Outreach and Promotion Strategies Design</h3>
+        </div>
+      </div>
+      <div className="relative bg-[#5a9772] cursor-pointer overflow-hidden group rounded-lg shadow-xl p-6 text-center hover:shadow hover:scale-105">
+        <div className="bg-white transition-all duration-300 absolute top-0 left-0 w-full h-full group-hover:translate-x-full rounded-lg shadow-xl p-6 text-center hover:shadow hover:scale-105"></div>
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <h3 className="text-black text-center group-hover:text-white px-4 md:px-8 lg:px-12 py-2 md:py-4 lg:py-6">Investor Outreach and Promotion Strategies Design</h3>
+        </div>
+      </div>
+      <div className="relative bg-[#5a9772] cursor-pointer overflow-hidden group rounded-lg shadow-xl p-6 text-center hover:shadow hover:scale-105">
+        <div className="bg-white transition-all duration-300 absolute top-0 left-0 w-full h-full group-hover:translate-x-full rounded-lg shadow-xl p-6 text-center hover:shadow hover:scale-105"></div>
+        <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center">
+          <h3 className="text-black text-center group-hover:text-white px-4 md:px-8 lg:px-12 py-2 md:py-4 lg:py-6">Investor Outreach and Promotion Strategies Design</h3>
         </div>
       </div>
     </div>
   );
 };
 
-export default Carousel;
+export default Service;

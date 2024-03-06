@@ -3,8 +3,8 @@ import bank from '../images/bank.png'
 import hand from '../images/handshake.png'
 import plant from '../images/plant.png'
 import arrow from '../images/Asset 4.png'
-import { Carousel } from '@material-tailwind/react';
-
+import Service from '../components/aceservices'
+import CardList from '../components/cardList';
 const ServiceCard = ({ title, description, image }) => {
   // Splitting the description into paragraphs
   const paragraphs = description.split('\n');
@@ -59,11 +59,10 @@ const ACEServices = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mb-10">
       <h1 className="text-3xl text-[#173e26] font-bold mb-4">ACE Services</h1>
       <h2 className="text-xl text-[#173e26] font-semibold mb-8">Investment Facilitation and Support</h2>
-      <p className='text-center text-gray-700 text-lg mx-8 w-[80%] '>To support foreign and local investors and startups navigate the Ethiopian investment climate by providing quality, value-added, independent advice, tailored specifically to their individual needs.</p>
-      <div className=' border-b-large border-b-blue-300 mb-8 w-full'></div>
+      <p className='text-center text-gray-700 text-lg mx-8 w-[80%] bg-white rounded-lg shadow-xl p-6 '>To support foreign and local investors and startups navigate the Ethiopian investment climate by providing quality, value-added, independent advice, tailored specifically to their individual needs.</p>
       <div className="flex flex-wrap justify-center">
         {services.map((service, index) => (
           <div key={index} className="m-4 md:w-[80%] hover:shadow hover:scale-105">
@@ -71,8 +70,10 @@ const ACEServices = () => {
           </div>
         ))}
       </div>
-      <h1 className="text-3xl text-[#173e26] font-bold mb-4">ACE Service Offerings</h1>
-      <Carousel/>
+      <h1 className="text-3xl text-[#173e26] font-bold mb-4 py-12">ACE Service Offerings</h1>
+      {/* <Carousel/> */}
+      {/* <Service/> */}
+      <CardList/>
     </div>
   );
 };

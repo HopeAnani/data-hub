@@ -1,47 +1,40 @@
 import React from 'react';
-import Card from './card';
+import Card from './card.jsx';
 
 const CardList = () => {
   const cardData = [
     {
-      title: 'Card 1',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'Investor Outreach and Promotion Strategies Design',
     },
     {
-      title: 'Card 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'Investment Promotion Platforms Coordination',
     },
     {
-      title: 'Card 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'Resource Mobilization/Fund Sourcing',
     },
     {
-      title: 'Card 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'Transaction Advisory Services: Market Intelligence (Sector Teasers & Legal Insights), Feasibility studies and business plans, Market Assessment & Positioning (Domestic & Export), Industry Tour Facilitation',
     },
     {
-      title: 'Card 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      title: 'Card 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      title: 'Card 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    },
-    {
-      title: 'Card 2',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      description: 'Stakeholder Analysis and Linkages',
     },
     // Add more card data as needed
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4 w-[80%] flex-grow">
       {cardData.map((card, index) => (
-        <Card key={index} title={card.title} description={card.description} />
+        <div key={index} className="relative">
+          <div className="max-w-sm mx-auto bg-white shadow-lg rounded-lg overflow-hidden hover:bg-[#173e26]  transition-all duration-300 hover:text-white">
+            <div className="sm:flex sm:items-center px-6 py-4">
+              <div className="text-center sm:text-left">
+                {/* <p className="text-xl font-semibold text-gray-800">{card.title}</p> */}
+                <p className="text-sm text-black hover:text-white">{card.description}</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute top-0 left-0 bg-white w-0 h-full transition-all duration-300 group-hover:w-full"></div>
+        </div>
       ))}
     </div>
   );

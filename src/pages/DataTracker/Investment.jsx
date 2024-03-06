@@ -82,7 +82,7 @@ const Investment = () => {
       
       <div className='md:w-4/6 h-[100%] mx-2 my-4 bg-white rounded-md overflow-hidden shadow-md'>
         <div><h2 className='text-center font-bold text-[#173e26] mt-4'> Agriculture, forestry, and fishing, value added (% of GDP)</h2></div>
-        <div className="flex justify-center mt-4">
+        <div className="flex justify-center mt-4 mb-12">
           <button className={`mr-4 px-4 py-2 rounded ${chartType === 'line' ? 'bg-gray-200' : ''}`} onClick={handleLineClick}>Line</button>
           <button className={`px-4 py-2 rounded ${chartType === 'bar' ? 'bg-gray-200' : ''}`} onClick={handleBarClick}>Bar</button>
         </div>
@@ -91,37 +91,37 @@ const Investment = () => {
             <LineChart 
             data={Agri}
             margin={{
-              top: 35,
+              top: 0,
               right: 45,
               left: 20,
-              bottom: 5
+              bottom: 55,
             }}
             >
               <CartesianGrid strokeDasharray="0" horizontal='' vertical='true' />
-              <XAxis dataKey="year" padding={{ left: 30, right: 30 }}/>
+              <XAxis dataKey="year" padding={{ left: 30, right: 30 }} angle={-45} textAnchor="end"/>
               <YAxis />
               <Tooltip content={CustomTooltip}/>
-              <Legend />
               <Line type="monotone" dataKey="value" stroke="#173e26" />
-              <Brush dataKey="year" height={30} stroke="#173e26" onChange={handleRangeChange} startIndex={selectedRange[0]} endIndex={selectedRange[1]} />
+              <Legend />
+              <Brush dataKey="year" height={30} y={260} stroke="#173e26" onChange={handleRangeChange} startIndex={selectedRange[0]} endIndex={selectedRange[1]} />
             </LineChart>
           ) : (
             <BarChart 
             data={Agri}
             margin={{
-              top: 35,
+              top: 0,
               right: 45,
               left: 20,
-              bottom: 5
+              bottom: 55,
             }}
             >
               <CartesianGrid strokeDasharray="0" horizontal='true' vertical=''/>
-              <XAxis dataKey="year" padding={{ left: 30, right: 30 }} />
+              <XAxis dataKey="year" padding={{ left: 30, right: 30 }} angle={-45} textAnchor='end'/>
               <YAxis />
               <Tooltip content={CustomTooltip}/>
               <Legend />
               <Bar dataKey="value" fill="#0F5132" activeBar={<Rectangle fill='#7AE582'/>}/>
-              <Brush dataKey="year" height={30} stroke="#173e26" onChange={handleRangeChange} startIndex={selectedRange[0]} endIndex={selectedRange[1]} />
+              <Brush dataKey="year" y={260} height={30} stroke="#173e26" onChange={handleRangeChange} startIndex={selectedRange[0]} endIndex={selectedRange[1]} />
             </BarChart>
           )}
         </ResponsiveContainer>

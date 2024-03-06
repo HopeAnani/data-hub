@@ -4,6 +4,7 @@ import {Pagination,Button} from "@nextui-org/react";
 import sample1 from '../images/Samplepdf.pdf';
 import sample2 from '../images/Samplepdf.pdf';
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure} from "@nextui-org/react";
+import SearchBar from '../components/Searchbar'
 
 const Result= () => {
   const pdfs = [ 
@@ -27,6 +28,7 @@ const Result= () => {
   const [currentPage, setCurrentPage] = React.useState(1);
   return (
       <div class="overflow-x-hidden bg-gray-100">
+        <SearchBar/>
           <div class="px-6 py-8">
               <div class="container flex justify-between mx-auto">
                   <div class="w-full lg:w-8/12">
