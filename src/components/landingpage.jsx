@@ -7,18 +7,18 @@ const LandingPage = () => {
   const slides = [
     {
       imageUrl: 'https://images.unsplash.com/photo-1462899006636-339e08d1844e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGludmVzdG1lbnR8ZW58MHx8MHx8fDA%3D',
-      title: 'ADH',
+      title: 'ACE Data Hub',
       description: 'The ADH functions as a one-stop shop that caters to anyone in the investment ecosystem (both foreign and domestic) looking to invest in Ethiopia. ACE Advisors collects and provides an extensive range of resources such as documents, data sheets, hyperlinks, and service offerings pertaining to investment in Ethiopia.',
     },
     {
       imageUrl: 'https://images.unsplash.com/photo-1575959508154-1fab18d1338b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'ADH',
-      description: 'The ADH functions as a one-stop shop that caters to anyone in the investment ecosystem (both foreign and domestic) looking to invest in Ethiopia. ACE Advisors collects and provides an extensive range of resources such as documents, data sheets, hyperlinks, and service offerings pertaining to investment in Ethiopia.',
+      title: 'Investment Insights',
+      description: 'ACE Advisors has outlined and broken down investment in Ethiopia into a tri-phased investment cycle, with each phase entailing a specific set of paperwork and processes. In the course of understanding the Ethiopian Investment ecosystem, ACE Advisors can offer you a comprehensive investment guide.',
     },
     {
       imageUrl: 'https://images.unsplash.com/photo-1633158829875-e5316a358c6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      title: 'ADH',
-      description: 'The ADH functions as a one-stop shop that caters to anyone in the investment ecosystem (both foreign and domestic) looking to invest in Ethiopia. ACE Advisors collects and provides an extensive range of resources such as documents, data sheets, hyperlinks, and service offerings pertaining to investment in Ethiopia.',
+      title: 'Our Offerings',
+      description: 'Our repository contains a variety of data types to assist those looking to understand investment in Ethiopia. You will find strategy and regulatory documents that provide insight into the country\'s laws and policies. There are also quantitative indicators presented visually for easy digestion. A guide takes you through the different phases of investment. Additionally, we offer services to help with certain processes along the way. The goal is to equip investors with the information and support needed whether learning about opportunities or establishing a presence in Ethiopia.',
     },
     
   ];
@@ -30,10 +30,10 @@ const LandingPage = () => {
   };
 
   useEffect(() => {
-    // Auto slide every 3.5 seconds (adjust the interval as needed)
+    // Auto slide every 4.5 seconds (adjust the interval as needed)
     const intervalId = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-    }, 3500);
+    }, 4500);
 
     // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);

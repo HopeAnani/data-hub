@@ -40,9 +40,7 @@ const Preimplementaion = () => {
                                       {/* <Link to="" class="px-2 py-1 font-bold text-gray-100 bg-[#173e26] rounded hover:bg-[#24542f]">Economy</Link> */}
                               </div>
                               <div class="mt-2"><Link to="" class="text-2xl font-bold text-[#173e26] hover:underline ">{pdf.title}</Link>
-                                  <p class="mt-2 text-black text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                      Tempora expedita dicta totam aspernatur doloremque. Excepturi iste iusto eos enim
-                                      reprehenderit nisi, accusamus delectus nihil quis facere in modi ratione libero!</p>
+                                  <p class="mt-2 text-black text-justify">The Investment Guide provides a comprehensive overview of procedures, requirements, laws, and processes for investing in Ethiopia, which has emerged as an important foreign direct investment destination in Africa due to its strong economic growth and investment-friendly policies</p>
                               </div>
                               <div class="flex items-center justify-between mt-4">
                                 <Link class="px-2 py-1 font-bold text-gray-100 bg-[#173e26] rounded hover:bg-[#24542f]" onClick={() => pdf.isFree ? handleDownload(pdf.downloadLink) : onOpen()}>Read more</Link>
