@@ -23,9 +23,15 @@ const Preimplementaion = () => {
     window.open("mailto:infoaceadvisors.org?subject=SendMail&body=Description");
   };
   return (
-    <div className='w-full h-full flex flex-col items-center justify-center'>
+    <div className='w-full h-full flex flex-wrap items-center justify-center'>
       {/* <ComingSoon/> */}
       <img src={imp} alt="" className='md:w-[30%] max-sm:mx-4' />
+      <div className="w-full md:w-[350px] mx-6 my-4 bg-white rounded-md overflow-hidden shadow-md">
+        <div className="p-6">
+          <h2 className="text-xl font-semibold mb-2 text-center">Pre-Implementation</h2>
+          <p className="text-gray-600 mb-4 text-justify">This early stage involves securing all required licenses and approvals to carry out planned business activities. Obtaining the proper documentation during establishment lays the groundwork for smooth implementation.</p>
+        </div>
+      </div>
       {pdfs.map((pdf,index) =>( 
                       <div key={index} class="mt-6 mb-6 max-sm:mx-2">
                           <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
