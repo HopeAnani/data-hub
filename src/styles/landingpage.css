@@ -83,11 +83,13 @@
   
     .img-slide .slide .info h2 {
       font-size: 35px;
+      margin-left: 0;
     }
   
     .img-slide .slide .info p {
-      width: 70%;
+      width: 100%;
       font-size: 15px;
+      margin-left: 0;
     }
   
     .img-slide .navigation {

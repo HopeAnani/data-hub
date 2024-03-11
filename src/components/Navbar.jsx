@@ -125,22 +125,22 @@ const Navbar = () => {
               <Link onClick={handleLinkClick}>Data Repository<AiFillCaretDown className="inline caret" /></Link>
               <ul>
                 <li>
-                  <Link to="/explore/data-repository/Doing-Business">Doing Business</Link>
+                  <Link to="/explore/data-indicator/Doing-Business">Doing Business</Link>
                 </li>
                 <li>
-                  <Link to="/explore/data-repository/Economy">Economy</Link>
+                  <Link to="/explore/data-indicator/Economy">Economy</Link>
                 </li>
                 <li>
-                  <Link to="/explore/data-repository/Infrastructure">Infrastructure</Link>
+                  <Link to="/explore/data-indicator/Infrastructure">Infrastructure</Link>
                 </li>
                 <li>
-                  <Link to="/explore/data-repository/Investment">Investment</Link>
+                  <Link to="/explore/data-indicator/Investment">Investment</Link>
                 </li>
                 <li>
-                  <Link to="/explore/data-repository/Social">Social</Link>
+                  <Link to="/explore/data-indicator/Social">Social</Link>
                 </li>
                 <li>
-                  <Link to="/explore/data-repository/Trade">Trade</Link>
+                  <Link to="/explore/data-indicator/Trade">Trade</Link>
                 </li>
               </ul>
             </li>

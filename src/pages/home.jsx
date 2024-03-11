@@ -93,7 +93,7 @@ const Home = () => {
       </div>
     </div>
     <Lifecycle/>  
-    <h1 class="text-[#173e26] text-3xl text-center font-bold pb-[40px]">Data Indicators</h1>
+    <h1 class="text-[#173e26] text-3xl text-center font-bold pb-[40px]  max-sm:hidden">Data Indicators</h1>
     <ImageAccordion/>
     <h1 class="text-[#173e26] text-3xl text-center font-bold pt-6 pb-[40px]">Regulatory Overview</h1>
     <Elements/>

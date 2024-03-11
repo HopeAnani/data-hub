@@ -39,12 +39,12 @@ const Explore = () => {
             <Route path="/Investment-Lifecycle/Pre-implementation" element={<Preimplementation/>} />
             <Route path="/Investment-Lifecycle/Implementation" element={<Implementaion/>} />
             <Route path="/Investment-Lifecycle/Operation" element={<Operation/>} />
-            <Route path="/Data-Repository/Economy" element={<Economy/>} />
-            <Route path="/Data-Repository/Trade" element={<Trade/>} />
-            <Route path="/Data-Repository/Social" element={<Social/>} />
-            <Route path="/Data-Repository/Investment" element={<Investment/>} />
-            <Route path="/Data-Repository/Infrastructure" element={<Infrastructure/>} />
-            <Route path="/Data-Repository/Doing-Business" element={<DoingBusiness/>} />
+            <Route path="/Data-Indicator/Economy" element={<Economy/>} />
+            <Route path="/Data-Indicator/Trade" element={<Trade/>} />
+            <Route path="/Data-Indicator/Social" element={<Social/>} />
+            <Route path="/Data-Indicator/Investment" element={<Investment/>} />
+            <Route path="/Data-Indicator/Infrastructure" element={<Infrastructure/>} />
+            <Route path="/Data-Indicator/Doing-Business" element={<DoingBusiness/>} />
             <Route path="/ACE-Services" element={<ACEServices/>} />
           </Routes>
           {/* <FlipBook/> */}

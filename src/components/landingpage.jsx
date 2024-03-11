@@ -18,7 +18,7 @@ const LandingPage = () => {
     {
       imageUrl: 'https://images.unsplash.com/photo-1633158829875-e5316a358c6f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       title: 'Our Offerings',
-      description: 'Our repository contains a variety of data types to assist those looking to understand investment in Ethiopia. You will find strategy and regulatory documents that provide insight into the country\'s laws and policies. There are also quantitative indicators presented visually for easy digestion. A guide takes you through the different phases of investment. Additionally, we offer services to help with certain processes along the way. The goal is to equip investors with the information and support needed whether learning about opportunities or establishing a presence in Ethiopia.',
+      description: 'Our repository contains a variety of data types to assist those looking to understand investment in Ethiopia. You will find strategy and regulatory documents, quantitative indicators, a guide for the different phases of investment, and we offer services to help with certain processes along the way.',
     },
     
   ];
@@ -51,7 +51,7 @@ const LandingPage = () => {
         className={`slide absolute w-full h-48 object-cover object-center ${index === currentSlide ? 'active' : ''}`}
         >
           <img className="z-10 w-full bg-cover" src={slide.imageUrl} alt="" />
-          <div className="info absolute top-0 pt-4 pr-8 pb-4 pl-8 object-center justify-center text-justify">
+          <div className="info absolute top-0 pt-4 pr-8 pb-4 max-sm:pl-8 object-center justify-center text-justify">
             {/* <SearchBar/> */}
             <h2 className="text-[45px] mt-40 uppercase font-extrabold tracking-wider  text-white">{slide.title}</h2>
             <p className='text-white'>{slide.description}</p>
