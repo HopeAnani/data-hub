@@ -12,7 +12,7 @@ const Business = () => {
     {
       title: 'Economy',
       pdfs: [
-        { title: 'Sample PDF document 1', downloadLink: sample1 },
+        { title: 'Sample PDF document 1 the quick brown fox jumps over the lazy dog the quick brown fox jumps over the lazy dog', downloadLink: sample1 },
         { title: 'Sample PDF document 2', downloadLink: sample2 },
       ],
     },

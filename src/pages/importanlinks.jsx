@@ -48,7 +48,7 @@ const Links = () => {
       <TableHeader>
         <TableColumn key="name" className=' font-extrabold text-[#173e26] text-lg'>Organization Name</TableColumn>
         <TableColumn key="description" className=' font-extrabold text-[#173e26] text-lg'>Description</TableColumn>
-        <TableColumn key="link" className=' font-extrabold text-[#173e26] text-lg w-44'>Link</TableColumn>
+        <TableColumn key="link" className=' font-extrabold text-[#173e26] text-lg w-[130px]'>Link</TableColumn>
       </TableHeader>
       <TableBody items={items}>
         {(item) => (

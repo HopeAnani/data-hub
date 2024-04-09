@@ -7,6 +7,9 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Result from "./pages/searchresult";
 import { NextUIProvider } from "@nextui-org/react";
 import ScrollButton from "./components/ToTop";
+import Filter from "./pages/filter";
+import Article from "./pages/Articles";
+import ArticlePage from "./pages/articlepage";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -24,6 +27,9 @@ const App = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/explore/*" element={<Explore />} />
         <Route path="/searchresult" element={<Result />} />
+        <Route path="/filter" element={<Filter/>}/>
+        <Route path="/article" element={<Article/>}/>
+        <Route path="/articlepage" element={<ArticlePage/>}/>
       </Routes>
       </div>
       <Footer />

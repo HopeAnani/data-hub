@@ -90,7 +90,7 @@ const Navbar = () => {
               onClick={(event) => {
               const clickedElement = event.target;
               const textContent = clickedElement.textContent.trim();
-              if (textContent !== "Regulatory & Strategy" && textContent !== "Data Repository") {
+              if (textContent !== "Regulatory & Strategy" && textContent !== "Data Repository" && textContent !== "Investment Lifecycle") {
                 closeNav();
               }
             }}>
@@ -117,6 +117,21 @@ const Navbar = () => {
                 </li>
                 <li>
                   <Link to="/explore/Important-links">Important Links</Link>
+                </li>
+              </ul>
+            </li>
+            <li className="p-4 border-b border-white">
+              {/* <a href="/">Explore</a> */}
+              <Link onClick={handleLinkClick} >Investment Lifecycle <AiFillCaretDown className="inline caret" /></Link>
+              <ul>
+                <li>
+                  <Link to="/explore/Investment-Lifecycle/Pre-implementation">Pre-implementation</Link>
+                </li>
+                <li>
+                  <Link to="/explore/Investment-Lifecycle/Implementation">Implementation</Link>
+                </li>
+                <li>
+                  <Link to="/explore/Investment-Lifecycle/Operation">Operation</Link>
                 </li>
               </ul>
             </li>

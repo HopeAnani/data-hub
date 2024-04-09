@@ -35,7 +35,7 @@ class ScrollButton extends React.Component {
         {isVisible && (
           <button
             title="Back to top"
-            className="scroll bg-black opacity-70 hover:opacity-100 rounded-lg fixed bottom-10 right-10 w-12 h-12"
+            className="scroll bg-[#173e26] opacity-70 hover:opacity-100 rounded-lg fixed bottom-10 right-10 w-12 h-12 border border-[#173e26] "
             onClick={this.scrollToTop}
           >
             <span className="text-white text-center block">&#9650;</span>

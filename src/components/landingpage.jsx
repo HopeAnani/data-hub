@@ -51,7 +51,7 @@ const LandingPage = () => {
         className={`slide absolute w-full h-48 object-cover object-center ${index === currentSlide ? 'active' : ''}`}
         >
           <img className="z-10 w-full bg-cover" src={slide.imageUrl} alt="" />
-          <div className="info absolute top-0 pt-4 pr-8 pb-4 max-sm:pl-8 object-center justify-center text-justify">
+          <div className="info absolute top-0 pt-4 pr-8 pb-4 pl-8 object-center justify-center text-justify">
             {/* <SearchBar/> */}
             <h2 className="text-[45px] mt-40 uppercase font-extrabold tracking-wider  text-white">{slide.title}</h2>
             <p className='text-white'>{slide.description}</p>

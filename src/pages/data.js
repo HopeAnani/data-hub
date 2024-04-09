@@ -366,3 +366,49 @@ export const Agri = [
 ];
 
 																																									
+// src/data/data.js
+export const articles = [
+  {
+    id: 1,
+    title: "Exploring the Depths of Ocean Conservation",
+    imageUrl: "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    content: "Ocean conservation is critical for protecting the planet's biodiversity...",
+    date: new Date('2024-01-01'),
+  },
+  {
+    id: 2,
+    title: "The Future of Renewable Energy",
+    imageUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    content: "Renewable energy sources are crucial for sustainable development...",
+    date: new Date('2024-02-01'),
+  },
+  {
+    id: 3,
+    title: "The Future of Renewable Energy",
+    imageUrl: "https://images.unsplash.com/photo-1530825894095-9c184b068fcb?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: "Renewable energy sources are crucial for sustainable development...",
+    date: new Date('2024-02-01'),
+  },
+  {
+    id: 4,
+    title: "Exploring the Depths of Ocean Conservation",
+    imageUrl: "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    content: "Ocean conservation is critical for protecting the planet's biodiversity...",
+    date: new Date('2024-01-01'),
+  },
+  {
+    id: 5,
+    title: "The Future of Renewable Energy",
+    imageUrl: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    content: "Renewable energy sources are crucial for sustainable development...",
+    date: new Date('2024-02-01'),
+  },
+  {
+    id: 6,
+    title: "The Future of Renewable Energy",
+    imageUrl: "https://images.unsplash.com/photo-1530825894095-9c184b068fcb?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    content: "Renewable energy sources are crucial for sustainable development...",
+    date: new Date('2024-02-01'),
+  },
+  // Add more articles as needed
+];
