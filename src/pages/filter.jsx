@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const FilterComponent = () => {
   const [sector, setSector] = useState('');
   const [region, setRegion] = useState('');
-  const [yearRange, setYearRange] = useState({ start: 2018, end: 2022 });
+  const [yearRange, setYearRange] = useState({ start: 1950, end: 2024 });
   const [filteredData, setFilteredData] = useState([]);
 
   const sectors = [...new Set(sampleData.map(item => item.sector))];
@@ -29,14 +29,14 @@ const FilterComponent = () => {
     <div className="p-4">
       <div className="flex gap-4 mb-4">
         <select className="p-2 rounded border" onChange={e => setSector(e.target.value)}>
-          <option value="">Select Sector</option>
+          <option value="">Sector</option>
           {sectors.map((sec, index) => (
             <option key={index} value={sec}>{sec}</option>
           ))}
         </select>
 
         <select className="p-2 rounded border" onChange={e => setRegion(e.target.value)}>
-          <option value="">Select Region</option>
+          <option value="">Region</option>
           {regions.map((reg, index) => (
             <option key={index} value={reg}>{reg}</option>
           ))}

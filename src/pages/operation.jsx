@@ -2,6 +2,7 @@ import React from 'react'
 import ComingSoon from '../components/ComingSoon'
 import { Link } from "react-router-dom";
 import imp from '../images/operation.svg'
+import image from "../images/op.png"
 import {Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure} from "@nextui-org/react";
 import {Button} from "@nextui-org/react";
 import sample1 from '../images/Samplepdf.pdf';
@@ -25,7 +26,10 @@ const Operation = () => {
   return (
     <div className='w-full h-full flex flex-wrap items-center justify-center'>
       {/* <ComingSoon/> */}
-      <img src={imp} alt="" className='md:w-[40%] max-sm:mx-4' />
+      <div className='flex flex-wrap items-center justify-center'>
+        <img src={imp} alt="" className='md:w-[30%] max-sm:mx-4' />
+        <img src={image} alt="" className='md:w-[30%] max-sm:mx-4 m-6' />
+      </div>
       <div className="w-full md:w-[350px] mx-6 my-4 bg-white rounded-md overflow-hidden shadow-md">
         <div className="p-6">
           <h2 className="text-xl font-semibold mb-2 text-center">Operation</h2>
