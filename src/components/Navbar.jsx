@@ -60,6 +60,10 @@ const Navbar = () => {
             <Link to="/explore">Explore</Link>
           </li>
           <li className="p-4 list">
+            {/* <a href="../pages/explore.jsx">Explore</a> */}
+            <Link to="/article">Article</Link>
+          </li>
+          <li className="p-4 list">
             {/* <a href="/">About us</a> */}
             <Link to="https://aceadvisors.org/about-us/">About us</Link>
           </li>
@@ -161,6 +165,10 @@ const Navbar = () => {
             </li>
             <li className="p-4 border-b border-white">
               <Link to="/explore/ACE-services/">ACE Services</Link>
+            </li>
+            <li className="p-4 border-b border-white">
+              {/* <a href="/">About us</a> */}
+              <Link to="/article">Article</Link>
             </li>
             <li className="p-4 border-b border-white">
               {/* <a href="/">About us</a> */}
