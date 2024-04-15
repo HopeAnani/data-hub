@@ -1,3 +1,5 @@
+import sample from "../images/English.png"
+
 export const users = [
   {
     key: "1",
@@ -365,13 +367,14 @@ export const Agri = [
   },
 ];
 
+
 																																									
 // src/data/data.js
 export const articles = [
   {
     id: 1,
     title: "Exploring the Depths of Ocean Conservation",
-    imageUrl: "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80",
+    imageUrl: sample,
     content: "Ocean conservation is critical for protecting the planet's biodiversity...",
     date: new Date('2024-01-01'),
   },
