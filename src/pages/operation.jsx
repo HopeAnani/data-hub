@@ -38,7 +38,7 @@ const Operation = () => {
       </div>
       {pdfs.map((pdf,index) =>( 
                       <div key={index} class="mt-6 mb-6 max-sm:mx-2">
-                          <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
+                          <div class="max-w-3xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md">
                               <div class="flex items-center justify-between"><span class="font-light text-gray-600">Mar 5,
                                       2024</span>
                                       {/* <Link to="" class="px-2 py-1 font-bold text-gray-100 bg-[#173e26] rounded hover:bg-[#24542f]">Economy</Link> */}
