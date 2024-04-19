@@ -47,6 +47,11 @@ const ArticlePage = () => {
           </p>
         ))}
       </div>
+      <button
+        className="bg-[#173e26] text-white p-2 rounded  hover:bg-[#112e1c]"
+      >
+        Download Pdf
+      </button>
 
       {/* Enhanced Suggestions Section */}
       <div className="mt-10">
