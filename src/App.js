@@ -10,6 +10,7 @@ import ScrollButton from "./components/ToTop";
 import Filter from "./pages/filter";
 import Article from "./pages/Articles";
 import ArticlePage from "./pages/articlepage";
+import Search from './pages/search'
 
 const App = () => {
   const { pathname } = useLocation();
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/" exact element={<Home />} />
         <Route path="/explore/*" element={<Explore />} />
         <Route path="/searchresult" element={<Result />} />
+        <Route path="/search" element={<Search />} />
         <Route path="/filter" element={<Filter/>}/>
         <Route path="/article" element={<Article/>}/>
         <Route path="/articlepage" element={<ArticlePage/>}/>

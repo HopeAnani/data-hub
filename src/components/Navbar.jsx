@@ -41,13 +41,13 @@ const Navbar = () => {
       <Header />
       <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 text-white">
         <h1 className=" text-2xl font-semibold flex align-middle">
-          <Link to ="/"><img src={ace_logo} className=" w-20" alt="" /></Link>
-          <span className="AIDH">
+          <Link to ="/"><img src={ace_logo} className=" w-40" alt="" /></Link>
+          {/* <span className="AIDH">
             <span className="text-[45px]"> | </span>ACE Data Hub
           </span>
           <span className="IDH hidden">
             <span className="text-[45px]"> | </span>ADH
-          </span>
+          </span> */}
         </h1>
         <ul className="hidden  md:flex">
           <li className="p-4 list">

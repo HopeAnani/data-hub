@@ -21,6 +21,7 @@ import Investment from "./DataTracker/Investment.jsx";
 import RegulatoryandStrategy from "./RegulatoryandStrategy.jsx";
 import ACEServices from "./ACEServices.jsx";
 import Studies from "./otherStudies.jsx";
+import DataIndicator from "./Data indicator.jsx";
 const Explore = () => {
   return (
     <>
@@ -39,6 +40,7 @@ const Explore = () => {
             <Route path="/Investment-Lifecycle/Pre-implementation" element={<Preimplementation/>} />
             <Route path="/Investment-Lifecycle/Implementation" element={<Implementaion/>} />
             <Route path="/Investment-Lifecycle/Operation" element={<Operation/>} />
+            <Route path="/Data-Indicator" element={<DataIndicator/>}/>
             <Route path="/Data-Indicator/Economy" element={<Economy/>} />
             <Route path="/Data-Indicator/Trade" element={<Trade/>} />
             <Route path="/Data-Indicator/Social" element={<Social/>} />

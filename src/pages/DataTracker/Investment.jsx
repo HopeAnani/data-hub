@@ -20,6 +20,7 @@ import {
   Brush,
   Legend
 } from "recharts";
+import { AiOutlineSearch } from 'react-icons/ai';
 import { Agri } from '../data';
 
 const CustomTooltip = ({ active, payload }) => {
@@ -63,7 +64,7 @@ const Investment = () => {
           }}
         >
           <MenuHandler>
-            <Button className='bg-white w-fit text-black m-4 md:w-2/5'>Data Indicator</Button>
+            <Button className='bg-white flex items-center justify-center w-fit text-black m-4 md:w-2/5'><AiOutlineSearch size={20} className='mr-4'/> Data Indicator</Button>
           </MenuHandler>
          
           <MenuList className='m-2'>

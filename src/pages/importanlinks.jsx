@@ -9,7 +9,8 @@ const Links = () => {
 
   const filteredUsers = React.useMemo(() => {
     return users.filter(user =>
-      user.name.toLowerCase().includes(searchQuery.toLowerCase())
+      user.name.toLowerCase().includes(searchQuery.toLowerCase())||
+      user.description.toLowerCase().includes(searchQuery.toLowerCase())
     );
   }, [searchQuery]);
 

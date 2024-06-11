@@ -75,8 +75,8 @@ const Sidebar = () => {
           </ul>
         </li>
         <li>
-          <Link onClick={handleLinkClick}>
-            Data Repository <AiFillCaretDown className="inline caret" />
+          <Link to="/explore/Data-Indicator" onClick={handleLinkClick}>
+            Data Indicator <AiFillCaretDown className="inline caret" />
           </Link>
           <ul>
             <li>
@@ -95,7 +95,7 @@ const Sidebar = () => {
               <Link to="/explore/data-indicator/Infrastructure">Infrastructure</Link>
             </li>
             <li>
-              <Link to="/explore/data-indicator/Doing-Business">Doing Buisness</Link>
+              <Link to="/explore/data-indicator/Doing-Business">Doing Business</Link>
             </li>
           </ul>
         </li>

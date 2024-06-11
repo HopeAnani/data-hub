@@ -18,8 +18,8 @@ import {
   Tooltip,
   ResponsiveContainer,
   Brush,
-  Legend
 } from "recharts";
+import { AiOutlineSearch } from 'react-icons/ai';
 import { Agri } from '../data';
 
 const CustomTooltip = ({ active, payload }) => {
@@ -28,8 +28,7 @@ const CustomTooltip = ({ active, payload }) => {
     return (
       <div className="bg-white shadow-md p-2 rounded-md">
         <p><strong className='text-[#173e26]'>Year:</strong> {data.year}</p>
-        <p><strong className='text-[#173e26]'>% of GDP:</strong> {data.value}</p>
-        <p><strong className='text-[#173e26]'>Real time value:</strong>{data.realtime}</p>
+        <p><strong className='text-[#173e26]'>{data.value}</strong> </p>
         {/* Add additional information here */}
       </div>
     );
@@ -57,13 +56,13 @@ const Economy = () => {
   return (
     <div>
       <div className='flex justify-center items-center'>
-        <Menu
+        <Menu 
           dismiss={{
-            itemPress: false,
+            itemPress: true,
           }}
         >
           <MenuHandler>
-            <Button className='bg-white w-fit text-black m-4 md:w-2/5'>Data Indicator</Button>
+          <Button className='bg-white flex items-center justify-center w-fit text-black m-4 md:w-2/5'><AiOutlineSearch size={20} className='mr-4'/> Data Indicator</Button>
           </MenuHandler>
          
           <MenuList className='m-2'>
@@ -102,7 +101,6 @@ const Economy = () => {
               <YAxis />
               <Tooltip content={CustomTooltip}/>
               <Line type="monotone" dataKey="value" stroke="#173e26" />
-              <Legend />
               <Brush dataKey="year" height={30} y={260} stroke="#173e26" onChange={handleRangeChange} startIndex={selectedRange[0]} endIndex={selectedRange[1]} />
             </LineChart>
           ) : (
@@ -119,8 +117,7 @@ const Economy = () => {
               <XAxis dataKey="year" padding={{ left: 30, right: 30 }} angle={-45} textAnchor='end'/>
               <YAxis />
               <Tooltip content={CustomTooltip}/>
-              <Legend />
-              <Bar dataKey="value" fill="#0F5132" activeBar={<Rectangle fill='#7AE582'/>}/>
+              <Bar dataKey="value" fill="#d9d9d9" activeBar={<Rectangle fill='#173e26'/>}/>
               <Brush dataKey="year" y={260} height={30} stroke="#173e26" onChange={handleRangeChange} startIndex={selectedRange[0]} endIndex={selectedRange[1]} />
             </BarChart>
           )}

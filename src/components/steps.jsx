@@ -3,7 +3,7 @@ import '../styles/steps.css';
 import one from '../images/one.png'
 import two from '../images/two.png'
 import three from '../images/three.png'
-
+import { Link } from 'react-router-dom';
 const Steps = () => {
   useEffect(() => {
     const imgBx = document.querySelectorAll('.imgBx');
@@ -46,13 +46,13 @@ const Steps = () => {
       <div className='box'>
         <div className="icon">
           <div className="imgBx active" style={{ '--i': 1 }} data-id="content1">
-            <img src={one} alt="" />
+            <Link to='/explore/Investment-Lifecycle/Pre-implementation'><img src={one} alt="" /></Link>
           </div>
           <div className="imgBx" style={{ '--i': 2 }} data-id="content2">
-            <img src={two} alt="" />
+            <Link to="/explore/Investment-Lifecycle/Implementation"><img src={two} alt="" /></Link>
           </div>
           <div className="imgBx" style={{ '--i': 3 }} data-id="content3">
-            <img src={three} alt="" />
+            <Link to='/explore/Investment-Lifecycle/Operation'><img src={three} alt="" /></Link>
           </div>
           {/* <div className="imgBx" style={{ '--i': 4 }} data-id="content4">
             <img src="https://images.unsplash.com/photo-1557576146-047908becbb4?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8TnVtYmVyJTIwMXxlbnwwfHwwfHx8MA%3D%3D" alt="" />
