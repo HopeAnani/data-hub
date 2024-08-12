@@ -71,6 +71,7 @@
   display: block;
   width: 100%;
   border-left: 3px solid transparent;
+  transition: background-color 0.3s ease; 
 }
 
 .sidebar ul li a:hover {

@@ -48,12 +48,12 @@ const LandingPage = () => {
       {slides.map((slide, index) => (
         <div
         key={index}
-        className={`slide absolute w-full h-48 object-cover object-center ${index === currentSlide ? 'active' : ''}`}
+        className={`slide absolute w-full h-full object-cover object-center ${index === currentSlide ? 'active' : ''}`}
         >
-          <img className="z-10 w-full bg-cover" src={slide.imageUrl} alt="" />
+          <img className="z-10 w-full md:h-auto h-full object-cover bg-cover" src={slide.imageUrl} alt="" />
           <div className="info absolute top-0 pt-4 pr-8 pb-4 pl-8 object-center justify-center text-justify">
             {/* <SearchBar/> */}
-            <h2 className="text-[45px] mt-40 uppercase font-extrabold tracking-wider  text-white">{slide.title}</h2>
+            <h2 className="text-[45px] md:mt-40 mt-32 uppercase font-extrabold tracking-wider  text-white">{slide.title}</h2>
             <p className='text-white'>{slide.description}</p>
             <Link to='/explore'><button className="bg-[#173e26] text-white p-2 rounded w-36 hover:bg-[#112e1c] btnn">Know more</button></Link>
           </div>

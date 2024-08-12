@@ -93,7 +93,7 @@
     }
   
     .img-slide .navigation {
-      bottom: 25px;
+      bottom: 0px;
     }
   
     .img-slide .navigation .btn {
@@ -101,6 +101,7 @@
       height: 10px;
       margin: 8px;
     }
+
   }
   
   /* Add similar media queries for other screen sizes */
